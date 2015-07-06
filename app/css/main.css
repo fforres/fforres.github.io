@@ -1,0 +1,11 @@
+html {
+position: relative;
+min-height: 100%;
+}
+body {
+background-image: url("/imgs/fforres_noders.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: right;
+margin:0;
+}
