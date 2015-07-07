@@ -19,16 +19,15 @@
   "homepage": "https://github.com/forres/forres.github.io",
   "devDependencies": {
     "css-loader": "^0.15.1",
+    "exports-loader": "^0.6.2",
+    "file-loader": "^0.8.4",
+    "font-awesome": "^4.3.0",
     "node-libs-browser": "^0.5.2",
+    "node-sass": "^3.1.2",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^1.0.2",
     "style-loader": "^0.12.3",
-  "exports-loader": "^0.6.2",
-  "node-sass": "^3.1.2",
-"raw-loader": "^0.5.1",
-"sass-loader": "^1.0.2",
-"url-loader": "^0.5.6",
-
-  "file-loader": "^0.8.4",
-
+    "url-loader": "^0.5.6",
     "webpack": "^1.10.1",
     "webpack-dev-server": "^1.10.1"
   }
