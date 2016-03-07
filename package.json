@@ -1,35 +1,38 @@
 {
-   "name": "forres.github.io",
-   "version": "1.0.0",
-   "description": "forres page",
-   "main": "index.js",
-   "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "webpack-dev-server --hot"
-   },
-   "repository": {
-      "type": "git",
-      "url": "https://github.com/forres/forres.github.io.git"
-   },
-   "author": "fforres",
-   "license": "MIT",
-   "bugs": {
-      "url": "https://github.com/forres/forres.github.io/issues"
-   },
-   "homepage": "https://github.com/forres/forres.github.io",
-   "devDependencies": {
-      "css-loader": "^0.15.1",
-      "exports-loader": "^0.6.2",
-      "file-loader": "^0.8.4",
-      "font-awesome": "^4.3.0",
-      "font-awesome-webpack": "0.0.3",
-      "node-libs-browser": "^0.5.2",
-      "node-sass": "^3.1.2",
-      "raw-loader": "^0.5.1",
-      "sass-loader": "^1.0.2",
-      "style-loader": "^0.12.3",
-      "url-loader": "^0.5.6",
-      "webpack": "^1.10.1",
-      "webpack-dev-server": "^1.10.1"
-   }
+  "name": "fforres",
+  "version": "1.0.0",
+  "description": "forres page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/webpack-dev-server --progress --colors --inline",
+    "build": "./node_modules/.bin/webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.6.5",
+    "babel-eslint": "^6.0.0-beta.1",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.6.0",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "bootstrap": "^4.0.0-alpha.2",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.3.0",
+    "eslint-config-airbnb": "^6.1.0",
+    "eslint-plugin-react": "^4.2.0",
+    "exports-loader": "^0.6.3",
+    "file-loader": "^0.8.5",
+    "jquery": "^2.2.1",
+    "node-sass": "^3.4.2",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "tether": "^1.2.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {}
 }
