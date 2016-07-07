@@ -381,7 +381,6 @@
 	function applyToTag(styleElement, obj) {
 		var css = obj.css;
 		var media = obj.media;
-		var sourceMap = obj.sourceMap;
 
 		if(media) {
 			styleElement.setAttribute("media", media)
@@ -399,7 +398,6 @@
 
 	function updateLink(linkElement, obj) {
 		var css = obj.css;
-		var media = obj.media;
 		var sourceMap = obj.sourceMap;
 
 		if(sourceMap) {
@@ -453,7 +451,7 @@
 
 
 	// module
-	exports.push([module.id, ".landing {\n  height: 100vh;\n  margin: 0;\n  padding: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center; }\n  .landing .photoBackground {\n    background-image: url(\"https://cloud.githubusercontent.com/assets/952992/8537702/23785e1c-2439-11e5-8582-8ac5eab363ec.jpeg\");\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: right;\n    content: \"\";\n    left: 0;\n    right: 0;\n    top: 0;\n    z-index: -1;\n    -webkit-filter: blur(2px) grayscale(0.4);\n    filter: blur(2px) grayscale(0.4); }\n  .landing .title {\n    color: white;\n    color: rgba(255, 255, 255, 0.92);\n    text-shadow: 1px 1px #000;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    font-family: 'Lato', sans-serif;\n    font-weight: 400; }\n    .landing .title .hola {\n      text-align: center;\n      font-weight: bold; }\n    .landing .title .presentacion {\n      font-size: 1.4em;\n      text-align: center; }\n      .landing .title .presentacion .nombreLargo {\n        display: none; }\n    .landing .title .button {\n      text-align: center; }\n    .landing .title .link {\n      color: white;\n      color: rgba(255, 255, 255, 0.92);\n      text-decoration: none;\n      font-weight: 300;\n      font-style: italic; }\n  .landing .fullheight {\n    min-height: 100vh;\n    position: absolute; }\n\n.section {\n  padding-top: 3em;\n  padding-bottom: 3em; }\n  .section .text {\n    color: #2d2d2d;\n    color: #2d2d2d;\n    font-size: 1.3em;\n    font-family: 'Roboto Slab', serif; }\n    .section .text .link {\n      color: #0b27ba;\n      color: #0b27ba;\n      text-decoration: none;\n      font-weight: 400;\n      font-style: italic; }\n  .section .footer .social {\n    font-size: 1.3em;\n    font-family: 'Roboto Slab', serif;\n    text-align: center; }\n    .section .footer .social .link {\n      color: #2d2d2d;\n      color: #2d2d2d;\n      font-size: 1.2em; }\n      .section .footer .social .link:hover, .section .footer .social .link:focus, .section .footer .social .link:active {\n        text-decoration: none; }\n\n.red {\n  color: red; }\n\n@media screen and (max-width: 700px) {\n  .social {\n    text-align: right; } }\n", ""]);
+	exports.push([module.id, "h1, h2, h3, h4, h5, p, li, ol {\n  line-height: 1.5em;\n  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  text-rendering: optimizeLegibility;\n  font-smooth: always; }\n\n.landing {\n  height: 100vh;\n  margin: 0;\n  padding: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center; }\n  .landing .photoBackground {\n    background-image: url(\"https://cloud.githubusercontent.com/assets/952992/8537702/23785e1c-2439-11e5-8582-8ac5eab363ec.jpeg\");\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: right;\n    content: \"\";\n    left: 0;\n    right: 0;\n    top: 0;\n    z-index: -1;\n    -webkit-filter: blur(2px) grayscale(0.4);\n    filter: blur(2px) grayscale(0.4); }\n  .landing .title {\n    color: white;\n    color: rgba(255, 255, 255, 0.92);\n    text-shadow: 1px 1px #000;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    font-family: 'Lato', sans-serif;\n    font-weight: 400; }\n    .landing .title .hola {\n      text-align: center;\n      font-weight: bold; }\n    .landing .title .presentacion {\n      font-size: 1.4em;\n      text-align: center; }\n      .landing .title .presentacion .nombreLargo {\n        display: none; }\n    .landing .title .button {\n      text-align: center; }\n    .landing .title .link {\n      color: white;\n      color: rgba(255, 255, 255, 0.92);\n      text-decoration: none;\n      font-weight: 300;\n      font-style: italic; }\n  .landing .fullheight {\n    min-height: 100vh;\n    position: absolute; }\n\n.section {\n  padding-top: 3em;\n  padding-bottom: 3em; }\n  .section .text {\n    color: #2d2d2d;\n    color: #2d2d2d;\n    font-size: 1.3em;\n    font-family: 'Roboto Slab', serif; }\n    .section .text .link {\n      color: #0b27ba;\n      color: #0b27ba;\n      text-decoration: none;\n      font-weight: 400;\n      font-style: italic; }\n  .section .footer .social {\n    font-size: 1.3em;\n    font-family: 'Roboto Slab', serif;\n    text-align: center; }\n    .section .footer .social .link {\n      color: #2d2d2d;\n      color: #2d2d2d;\n      font-size: 1.2em; }\n      .section .footer .social .link:hover, .section .footer .social .link:focus, .section .footer .social .link:active {\n        text-decoration: none; }\n\n.red {\n  color: red; }\n\n@media screen and (max-width: 700px) {\n  .social {\n    text-align: right; } }\n", ""]);
 
 	// exports
 
@@ -626,7 +624,45 @@
 /* 21 */
 /***/ function(module, exports) {
 
-	"use strict";
+	'use strict';
+
+	var load = function load() {
+	  var hiHeight = document.getElementById('hi').offsetTop;
+
+	  var setScroll = function setScroll(pos, time) {
+	    var currentPos = document.body.scrollTop;
+	    var int = setInterval(function () {
+	      window.scrollTo(0, currentPos + pos / time + 7);
+	      currentPos = document.body.scrollTop;
+	      if (currentPos >= pos) {
+	        clearInterval(int);
+	      }
+	    }, pos / time);
+	  };
+	  var doClick = function doClick(e) {
+	    e.preventDefault();
+	    setScroll(hiHeight, 200);
+	  };
+	  // EVENTS DEFINITIONS
+
+	  // EVENTS EXCECUTIONS
+	  window.addEventListener('resize', function () {
+	    hiHeight = document.getElementById('hi').offsetTop;
+	  });
+
+	  document.getElementById('tohi').addEventListener('click', doClick);
+	};
+
+	document.addEventListener('DOMContentLoaded', function () {
+	  if (document.readyState === 'complete') {
+	    load();
+	  }
+	  if (document.readyState === 'interactive') {
+	    load();
+	  }
+	  document.addEventListener('complete', load, false);
+	  return null;
+	});
 
 /***/ },
 /* 22 */

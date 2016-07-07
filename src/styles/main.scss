@@ -1,3 +1,14 @@
+h1, h2, h3, h4, h5, p, li, ol {
+  line-height: 1.5em;
+  // hacks for font smoothing
+  text-shadow: 0 0 1px rgba(0,0,0,0.2);
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+}
+
+
 .landing {
   height: 100vh;
   margin: 0;
