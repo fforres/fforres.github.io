@@ -74,6 +74,9 @@ h1, h2, h3, h4, h5, p, li, ol {
     color: rgba(45, 45, 45, 1);
     font-size: 1.3em;
     font-family: 'Roboto Slab', serif;
+    p {
+      line-height: 1.7em;
+    }
     .link {
       color: rgb(11, 39, 186);
       color: rgba(11, 39, 186, 1);
@@ -97,6 +100,15 @@ h1, h2, h3, h4, h5, p, li, ol {
       }
     }
   }
+}
+.center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.center.horizontal{
+  flex-direction: row;
+  justify-content: space-around;
 }
 .red {
   color: red;
