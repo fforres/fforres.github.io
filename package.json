@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/webpack-dev-server --progress --colors --inline",
-    "build": "./node_modules/.bin/webpack"
+    "start": "./node_modules/.bin/webpack-dev-server --config webpack/webpack.config.js --progress --colors --inline --hot --profile",
+    "build": "rimraf dist && ./node_modules/.bin/webpack --config webpack/webpack.config.js --progress --colors --profile"
   },
   "author": "",
   "license": "ISC",
@@ -33,10 +33,22 @@
     "style-loader": "^0.13.0",
     "tether": "^1.2.0",
     "url-loader": "^0.5.7",
-    "webpack": "^1.12.14",
-    "webpack-dev-server": "^1.14.1"
+    "webpack": "v2.2.0-rc.3",
+    "webpack-dev-server": "v2.2.0-rc.0"
   },
   "dependencies": {
+    "ejs-loader": "^0.3.0",
+    "html-webpack-plugin": "^2.26.0",
+    "inferno": "^1.0.7",
+    "json-loader": "^0.5.4",
+    "rimraf": "^2.5.4",
     "static-site-generator-webpack-plugin": "^3.1.0"
+  },
+  "eslintConfig": {
+    "globals": {
+      "Polymer": true,
+      "document": true,
+      "window": true
+    }
   }
 }
