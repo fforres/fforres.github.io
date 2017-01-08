@@ -15,22 +15,44 @@ export class Landing extends Component {
           <h1 className="hola">I'm fforres!</h1>
           <p className="presentacion">
             <span>I enjoy</span>
-            <span><a href="http://github.com/fforres" target="_blank" className="link sliding-middle-out">coding,</a></span>
-            <span><a href="http://nodeschool.cl" target="_blank" className="link sliding-middle-out">teaching</a></span>
+            <span><a
+              href="http://github.com/fforres"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="link sliding-middle-out"
+            >coding,</a>
+            </span>
+            <span><a
+              href="http://nodeschool.cl"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="link sliding-middle-out"
+            >teaching</a></span>
             <span>&</span>
-            <span><a href="http://meetupjs.cl" target="_blank" className="link sliding-middle-out">hosting events</a></span>
+            <span><a
+              href="http://meetupjs.cl"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="link sliding-middle-out"
+            >hosting events</a></span>
           </p>
           <p className="presentacion">
-            <a href="//fforr.es/gpn" className="link sliding-middle-out">I also made a "Groupon Coupon Site" selling well... me </a>
+            <a
+              href="//fforr.es/gpn"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="link sliding-middle-out"
+            >I also made a "Groupon Coupon Site" selling well... me </a>
           </p>
           <p>
-            <a id="tohi" href="#hi">
-              <i className="fa fa-fw fa-caret-down"></i>
-            </a>
+            <a
+              id="tohi"
+              href="#hi"
+            ><i className="fa fa-fw fa-caret-down" /></a>
           </p>
         </div>
       </div>
-    )
+    );
   }
 }
 
