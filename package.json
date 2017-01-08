@@ -5,30 +5,37 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/webpack-dev-server --config webpack/webpack.config.js --progress --colors --inline --hot --profile",
-    "build": "rimraf dist && ./node_modules/.bin/webpack --config webpack/webpack.config.js --progress --colors --profile"
+    "start": "./node_modules/.bin/webpack-dev-server --config webpack/webpack.config.js --progress --colors --inline --hot --profile --info",
+    "prebuild": "rimraf dist",
+    "build": "./node_modules/.bin/webpack --config webpack/webpack.prod.config.js --progress --colors"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.6.5",
-    "babel-eslint": "^6.1.0",
-    "babel-loader": "^6.2.4",
-    "babel-plugin-transform-runtime": "^6.6.0",
-    "babel-preset-es2015": "^6.6.0",
-    "babel-preset-react": "^6.5.0",
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-inferno": "^1.5.0",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
     "bootstrap": "^4.0.0-alpha.2",
     "css-loader": "^0.23.1",
-    "eslint": "^2.13.1",
-    "eslint-config-airbnb": "^9.0.1",
-    "eslint-plugin-import": "^1.10.2",
-    "eslint-plugin-jsx-a11y": "^1.5.5",
-    "eslint-plugin-react": "^5.2.2",
+    "ejs-loader": "^0.3.0",
+    "eslint": "^3.12.0",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-inferno": "^6.8.0",
+    "eslint-plugin-jsx-a11y": "v2.2.3",
+    "eslint-plugin-react": "^6.8.0",
     "exports-loader": "^0.6.3",
     "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.26.0",
     "jquery": "^2.2.1",
+    "json-loader": "^0.5.4",
     "node-sass": "^3.4.2",
     "raw-loader": "^0.5.1",
+    "rimraf": "^2.5.4",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
     "tether": "^1.2.0",
@@ -37,18 +44,7 @@
     "webpack-dev-server": "v2.2.0-rc.0"
   },
   "dependencies": {
-    "ejs-loader": "^0.3.0",
-    "html-webpack-plugin": "^2.26.0",
-    "inferno": "^1.0.7",
-    "json-loader": "^0.5.4",
-    "rimraf": "^2.5.4",
-    "static-site-generator-webpack-plugin": "^3.1.0"
-  },
-  "eslintConfig": {
-    "globals": {
-      "Polymer": true,
-      "document": true,
-      "window": true
-    }
+    "inferno": "^1.1.0",
+    "inferno-component": "^1.1.0"
   }
 }

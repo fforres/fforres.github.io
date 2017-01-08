@@ -1,4 +1,12 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb"
+  "extends": "airbnb",
+  "globals": {
+    "Polymer": true,
+    "document": true,
+    "window": true
+  },
+  "rules": {
+    "linebreak-style": 2
+  }
 }
