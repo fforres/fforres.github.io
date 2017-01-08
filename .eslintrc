@@ -6,7 +6,9 @@
     "document": true,
     "window": true
   },
-  "plugins": ["inferno"],
+  "plugins": [
+    "inferno"
+  ],
   "settings": {
     "inferno": {
       "pragma": "Inferno",  // Pragma to use, default to "Inferno"
@@ -15,11 +17,11 @@
   },
   "rules": {
     "linebreak-style": 2,
-    "import/no-named-as-default": 0,
     "inferno/jsx-uses-inferno": 2,
     "inferno/jsx-uses-vars": 2,
     "react/react-in-jsx-scope": 0,
-    "react/jsx-filename-extension": 0
+    "react/jsx-filename-extension": 0,
+    "import/no-named-as-default": 0
   },
   "parserOptions": {
     "ecmaFeatures": {

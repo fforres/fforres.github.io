@@ -26,24 +26,24 @@ export class Landing extends Component {
                 <li>I really love JS & NodeJS</li>
                 <li>I also love teaching</li>
                 <li>I do:
-                  <a
+                  <span><a
                     href="http://noders.com"
                     rel="noopener noreferrer"
                     target="_blank"
                     className="link sliding-middle-out-dark"
-                  >Noders</a>,
-                  <a
+                  >Noders</a></span>,
+                  <span><a
                     href="http://meetupjs.cl"
                     rel="noopener noreferrer"
                     target="_blank"
                     className="link sliding-middle-out-dark"
-                  >JSMeetups</a>,
-                  <a
+                  >JSMeetups</a></span>,
+                  <span><a
                     href="http://nodeschool.cl"
                     rel="noopener noreferrer"
                     target="_blank"
                     className="link sliding-middle-out-dark"
-                  >NodeSchool</a> and Podcast</li>
+                  >NodeSchool</a></span> and Podcast</li>
                 <li>I like dancing Salsa</li>
               </ol>
             </p>
