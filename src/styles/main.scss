@@ -88,21 +88,6 @@ span {
       font-style: italic;
     }
   }
-  .footer {
-    .social {
-      font-size: 1.3em;
-      font-family: 'Roboto Slab', serif;
-      text-align: center;
-      .link{
-        color: rgb(45, 45, 45);
-        color: rgba(45, 45, 45, 1);
-        font-size: 1.2em;
-        &:hover, &:focus, &:active{
-          text-decoration: none
-        }
-      }
-    }
-  }
 }
 .center {
   display: flex;

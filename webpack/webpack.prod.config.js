@@ -41,10 +41,18 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.css$/,
-      loader: 'style-loader!css-loader',
+      loaders: [
+        'style?sourceMap',
+        'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+      ],
     }, {
       test: /\.scss$/,
-      loader: 'style-loader!css-loader!sass-loader',
+      loaders: [
+        'style',
+        'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+        'resolve-url-loader',
+        'sass',
+      ],
     }, {
       test: /\.json$/,
       loader: 'json-loader',
