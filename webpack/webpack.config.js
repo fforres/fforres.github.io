@@ -1,8 +1,16 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+/*
+  eslint-disable
+    import/no-extraneous-dependencies,
+    no-var,
+    func-names,
+    prefer-arrow-callback,
+    prefer-template
+*/
+var path = require('path');
+var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const routes = ['home', 'talks'];
+var routes = ['home', 'talks'];
 
 function entries(arr) {
   const ob = {};
@@ -14,7 +22,7 @@ function entries(arr) {
 }
 
 function htmlPlugins(arr) {
-  const newArray = arr.map(function(el) {
+  const newArray = arr.map(function (el) {
     return new HtmlWebpackPlugin({
       title: 'fforr.es <3 web things',
       filename: el + '.html',
@@ -33,6 +41,7 @@ function htmlPlugins(arr) {
 
 module.exports = {
   entry: entries(routes),
+  devtool: 'cheap-module-source-map',
   output: {
     path: path.resolve(__dirname, '..', 'dist'),
     filename: '[name].bundle.js',
@@ -41,10 +50,24 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.css$/,
-      loader: 'style-loader!css-loader',
+      loaders: [
+        'style-loader?sourceMap',
+        'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+      ],
     }, {
       test: /\.scss$/,
-      loader: 'style-loader!css-loader!sass-loader',
+      loaders: [
+        'style-loader?sourceMap',
+        'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+        'resolve-url-loader',
+        'sass-loader?sourceMap',
+      ],
+    }, {
+      test: /.*\.(gif|png|jpe?g|svg)$/i,
+      loaders: [
+        'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+        'image-webpack-loader?{optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}, mozjpeg: {quality: 65}}',
+      ],
     }, {
       test: /\.json$/,
       loader: 'json-loader',

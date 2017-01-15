@@ -1,4 +1,12 @@
+import 'bootstrap/scss/bootstrap.scss';
+
 import './fonts.css';
 import './main.scss';
 import './underline.scss';
-import 'bootstrap/scss/bootstrap.scss';
+
+export {
+  row,
+  center,
+  section,
+  slidingMiddleOut,
+} from './globals';

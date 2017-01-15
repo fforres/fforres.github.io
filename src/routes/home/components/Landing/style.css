@@ -1,0 +1,55 @@
+.landingContainer {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.photoBackground {
+  position: absolute;
+  height: 90vh;
+  width: 100vw;
+  background-image: url('./fforres.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-filter: blur(2px) grayscale(0.4);
+  filter:blur(2px) grayscale(0.4);
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 1px 1px #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.salutation {
+  text-align: center;
+  font-weight: bold;
+}
+.presentation {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.link {
+  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: none;
+  font-weight: 300;
+  font-style: italic;
+}

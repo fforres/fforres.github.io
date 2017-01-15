@@ -1,0 +1,19 @@
+.top-bar-wrapper {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1.3em;
+  justify-content: space-around;
+  padding-top: 1rem;
+}
+
+
+.top-bar-link {
+  color: rgba(200, 200, 200, 1);
+  font-size: 0.96rem;
+  padding: 1rem;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}

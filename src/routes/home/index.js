@@ -1,12 +1,15 @@
 import Inferno from 'inferno';
 
+import TopBar from '../../components/TopBar';
+import Footer from '../../components/Footer';
+
 import Landing from './components/Landing';
 import Text from './components/Text';
 import Resumen from './components/Resumen';
-import Footer from '../../components/Footer';
 
 const app = () => (
   <div>
+    <TopBar />
     <Landing />
     <Text />
     <Resumen />
