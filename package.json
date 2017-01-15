@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "yolo": "npm run build && npm run deploy",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist -b master",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cross-env NODE_ENV=development ./node_modules/.bin/webpack-dev-server --config webpack/webpack.config.js --progress --colors --inline --hot --profile --info",
     "prebuild": "rimraf dist",
-    "build": "cross-env NODE_ENV=production ./node_modules/.bin/webpack --config webpack/webpack.prod.config.js --progress --colors"
+    "build": "cross-env NODE_ENV=production ./node_modules/.bin/webpack --config webpack/webpack.prod.config.js --progress --colors",
+    "postbuild": "copy .\\webpack\\copy\\* dist"
   },
   "author": "",
   "license": "ISC",
@@ -52,6 +53,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.2",
+    "copy": "^0.3.0",
     "glamor": "^2.20.20",
     "inferno": "^1.1.0",
     "inferno-component": "^1.1.0"
