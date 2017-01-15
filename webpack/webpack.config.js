@@ -41,6 +41,7 @@ function htmlPlugins(arr) {
 
 module.exports = {
   entry: entries(routes),
+  devtool: 'cheap-module-source-map',
   output: {
     path: path.resolve(__dirname, '..', 'dist'),
     filename: '[name].bundle.js',
@@ -60,6 +61,12 @@ module.exports = {
         'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
         'resolve-url-loader',
         'sass-loader?sourceMap',
+      ],
+    }, {
+      test: /.*\.(gif|png|jpe?g|svg)$/i,
+      loaders: [
+        'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+        'image-webpack-loader?{optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}, mozjpeg: {quality: 65}}',
       ],
     }, {
       test: /\.json$/,

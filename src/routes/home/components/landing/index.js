@@ -1,4 +1,5 @@
 import Component from 'inferno-component';
+import style from './style.css';
 
 export class Landing extends Component {
   constructor(props) {
@@ -27,31 +28,30 @@ export class Landing extends Component {
   }
   render() {
     return (
-      <div className="landing row">
-        <div className="photoBackground fullheight" />
-        <div className="title">
-          <h1 className="hola">I&apos;m fforres!</h1>
-          <p className="presentacion">
+      <div className={style.landingContainer}>
+        <div className={style.photoBackground} />
+        <div className={style.title}>
+          <h1 className={style.salutation}>I&apos;m fforres!</h1>
+          <p className={style.presentation}>
             <span>I enjoy</span>
             <span><a
               href="http://github.com/fforres"
               rel="noopener noreferrer"
               target="_blank"
-              className="link sliding-middle-out"
-            >coding,</a>
-            </span>
+              className={`${style.link} sliding-middle-out`}
+            >coding,</a></span>
             <span><a
               href="http://nodeschool.cl"
               rel="noopener noreferrer"
               target="_blank"
-              className="link sliding-middle-out"
+              className={`${style.link} sliding-middle-out`}
             >teaching</a></span>
             <span>&</span>
             <span><a
               href="http://meetupjs.cl"
               rel="noopener noreferrer"
               target="_blank"
-              className="link sliding-middle-out"
+              className={`${style.link} sliding-middle-out`}
             >hosting events</a></span>
           </p>
           <p className="presentacion">
@@ -59,8 +59,8 @@ export class Landing extends Component {
               href="//fforr.es/gpn"
               rel="noopener noreferrer"
               target="_blank"
-              className="link sliding-middle-out"
-            >I also made a "Groupon Coupon Site" selling well... me </a>
+              className={`${style.link} sliding-middle-out`}
+            >I also made a &quot;Groupon-coupon-like-website&quot; selling... me? </a>
           </p>
           <p>
             <a

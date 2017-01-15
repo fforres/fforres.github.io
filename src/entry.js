@@ -1,3 +1,3 @@
 import './styles';
-import './fonts';
+// import './fonts';
 import './js';
