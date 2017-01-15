@@ -4,6 +4,8 @@
   "description": "forres page",
   "main": "index.js",
   "scripts": {
+    "yolo": "npm run build && npm run deploy",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cross-env NODE_ENV=development ./node_modules/.bin/webpack-dev-server --config webpack/webpack.config.js --progress --colors --inline --hot --profile --info",
     "prebuild": "rimraf dist",
@@ -32,6 +34,7 @@
     "eslint-plugin-react": "^6.8.0",
     "exports-loader": "^0.6.3",
     "file-loader": "^0.8.5",
+    "gh-pages": "^0.12.0",
     "html-webpack-plugin": "^2.26.0",
     "image-webpack-loader": "^3.1.0",
     "jquery": "^2.2.1",

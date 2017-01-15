@@ -41,6 +41,7 @@ function htmlPlugins(arr) {
 
 module.exports = {
   entry: entries(routes),
+  devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, '..', 'dist'),
     filename: '[name].bundle.js',
@@ -50,16 +51,16 @@ module.exports = {
     loaders: [{
       test: /\.css$/,
       loaders: [
-        'style?sourceMap',
-        'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+        'style-loader?sourceMap',
+        'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
       ],
     }, {
       test: /\.scss$/,
       loaders: [
-        'style',
-        'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+        'style-loader',
+        'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
         'resolve-url-loader',
-        'sass',
+        'sass-loader',
       ],
     }, {
       test: /.*\.(gif|png|jpe?g|svg)$/i,
