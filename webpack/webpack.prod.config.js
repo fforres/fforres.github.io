@@ -1,8 +1,16 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+/*
+  eslint-disable
+    import/no-extraneous-dependencies,
+    no-var,
+    func-names,
+    prefer-arrow-callback,
+    prefer-template
+*/
+var path = require('path');
+var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const routes = ['home', 'talks'];
+var routes = ['home', 'talks'];
 
 function entries(arr) {
   const ob = {};
@@ -14,7 +22,7 @@ function entries(arr) {
 }
 
 function htmlPlugins(arr) {
-  const newArray = arr.map(function(el) {
+  const newArray = arr.map(function (el) {
     return new HtmlWebpackPlugin({
       title: 'fforr.es <3 web things',
       filename: el + '.html',
