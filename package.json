@@ -52,10 +52,15 @@
     "webpack-dev-server": "v2.2.0-rc.0"
   },
   "dependencies": {
+    "babel-plugin-module-resolver": "^2.4.0",
     "bootstrap": "^4.0.0-alpha.2",
     "copy": "^0.3.0",
+    "extract-text-webpack-plugin": "v2.0.0-beta.5",
+    "font-awesome": "^4.7.0",
     "glamor": "^2.20.20",
     "inferno": "^1.1.0",
-    "inferno-component": "^1.1.0"
+    "inferno-compat": "^1.2.0",
+    "inferno-component": "^1.1.0",
+    "react-fa": "^4.1.2"
   }
 }

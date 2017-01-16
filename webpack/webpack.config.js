@@ -9,6 +9,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 var routes = ['home', 'talks'];
 
@@ -50,6 +51,14 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.css$/,
+      include: /node_modules/,
+      loader: ExtractTextPlugin.extract({
+        fallbackLoader: 'style-loader',
+        loader: 'css-loader',
+      }),
+    }, {
+      test: /\.css$/,
+      exclude: /node_modules/,
       loaders: [
         'style-loader?sourceMap',
         'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
@@ -83,11 +92,21 @@ module.exports = {
       loader: 'babel-loader',
       query: {
         presets: ['es2015'],
-        plugins: ['transform-runtime', 'inferno'],
+        plugins: [
+          'transform-runtime',
+          'inferno',
+        ],
       },
     }],
   },
+  resolve: {
+    alias: {
+      react: 'inferno-compat',
+      'react-dom': 'inferno-compat',
+    },
+  },
   plugins: [
+    new ExtractTextPlugin('extracted.css'),
     new webpack.ProvidePlugin({
       $: 'jquery',
       'window.$': 'jquery',

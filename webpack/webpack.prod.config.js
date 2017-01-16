@@ -105,5 +105,12 @@ module.exports = {
     new webpack.ProvidePlugin({
       _: 'lodash',
     }),
+    ['module-resolver', {
+      root: ['.'],
+      alias: {
+        react: 'inferno-compat',
+        'react-dom': 'inferno-compat',
+      },
+    }],
   ].concat(htmlPlugins(routes)),
 };

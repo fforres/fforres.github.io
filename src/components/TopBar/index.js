@@ -2,8 +2,6 @@ import Component from 'inferno-component';
 import underline from '../../styles/underline.css';
 import style from './style.css';
 
-console.log(underline);
-
 export class TopBar extends Component {
   constructor(props) {
     super(props);

@@ -1,7 +1,10 @@
 import Component from 'inferno-component';
+import { Icon } from 'react-fa';
+
 import style from './style.css';
 import Division from '../Division';
 
+console.log(style.iconsContainer_Base);
 
 export class Landing extends Component {
   constructor(props) {
@@ -14,54 +17,66 @@ export class Landing extends Component {
         className={style.footer}
       >
         <Division />
-        <div className={`col-xs-8`}>
+        <div className={style.iconsContainer}>
           <a
             href="http://twitter.com/fforres"
             rel="noopener noreferrer"
-            className={`${style.link}`}
+            className={style.link}
             target="_blank"
           >
-            <i className="fa fa-fw fa-twitter" />
+            <Icon
+              name="twitter"
+            />
           </a>
           <a
             href="http://facebook.com/fforres"
             rel="noopener noreferrer"
-            className={`${style.link}`}
+            className={style.link}
             target="_blank"
           >
-            <i className="fa fa-fw fa-facebook" />
+            <Icon
+              name="facebook"
+            />
           </a>
           <a
             href="https://cl.linkedin.com/in/fforres"
             rel="noopener noreferrer"
-            className={`${style.link}`}
+            className={style.link}
             target="_blank"
           >
-            <i className="fa fa-fw fa-linkedin" />
+            <Icon
+              name="linkedin"
+            />
           </a>
           <a
             href="http://github.com/fforres"
             rel="noopener noreferrer"
-            className={`${style.link}`}
+            className={style.link}
             target="_blank"
           >
-            <i className="fa fa-fw fa-github" />
+            <Icon
+              name="github"
+            />
           </a>
           <a
             href="http://flickr.com/fforres"
             rel="noopener noreferrer"
-            className={`${style.link}`}
+            className={style.link}
             target="_blank"
           >
-            <i className="fa fa-fw fa-flickr" />
+            <Icon
+              name="flickr"
+            />
           </a>
           <a
             href="mailto:felipe.torressepulveda@gmail.com"
             rel="noopener noreferrer"
-            className={`${style.link}`}
+            className={style.link}
             target="_blank"
           >
-            <i className="fa fa-fw fa-envelope" />
+            <Icon
+              name="envelope"
+            />
           </a>
         </div>
       </div>
