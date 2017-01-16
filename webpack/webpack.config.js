@@ -112,7 +112,6 @@ module.exports = {
       'window.$': 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
-      'window.Tether': 'tether',
       Polymer: 'Polymer',
       'window-Polymer': 'Polymer',
     }),

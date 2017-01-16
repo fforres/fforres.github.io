@@ -10,6 +10,7 @@ var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 var routes = ['home', 'talks'];
 
@@ -118,7 +119,6 @@ module.exports = {
       'window.$': 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
-      'window.Tether': 'tether',
       Polymer: 'Polymer',
       'window-Polymer': 'Polymer',
     }),
@@ -130,5 +130,8 @@ module.exports = {
     new webpack.ProvidePlugin({
       _: 'lodash',
     }),
-  ].concat(htmlPlugins(routes)),
+  ].concat(htmlPlugins(routes))
+  .concat([new CopyWebpackPlugin([{
+    from: './webpack/copy/CNAME',
+  }], {})]),
 };
