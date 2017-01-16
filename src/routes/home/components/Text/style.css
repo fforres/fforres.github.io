@@ -1,0 +1,28 @@
+.textArea {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.paragraphsContainer {
+  max-width: 75vw;
+  color: rgb(45, 45, 45);
+  color: rgba(45, 45, 45, 1);
+  font-size: 1.3em;
+  font-family: 'Roboto Slab', serif;
+}
+.paragraph {
+  line-height: 1.7em;
+}
+@media (max-width: 600px) {
+  .paragraphsContainer {
+    max-width: 90vw;
+  }
+}
+
+@media (min-width: 1300px) {
+  .paragraphsContainer {
+    max-width: 55vw;
+  }
+}
