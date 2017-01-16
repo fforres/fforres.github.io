@@ -17,11 +17,17 @@ export class Landing extends Component {
           <div className="row center section">
             <div className="col-xs-8 col-xs-offset-2 text">
               <h4>If you need a smaller resume, I <span>have your back</span>:</h4>
-              <p>
+              <p className={style.paragraph}>
                 <ol>
                   <li>My name is Felipe Torres</li>
                   <li>I currently work at Groupon</li>
-                  <li>I love coding</li>
+                  <li><a href="./talks.html">I Give Talks</a></li>
+                  <li><a
+                    href="http://www.github.com/fforres"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="link sliding-middle-out-dark"
+                  >I love coding</a></li>
                   <li>I really love JS & NodeJS</li>
                   <li>I also love teaching</li>
                   <li>I do:
