@@ -16,6 +16,10 @@
   font-family: 'Roboto Slab', serif;
 }
 
+.paragraph {
+  padding-top: 1.6em;
+}
+
 @media (max-width: 600px) {
   .container {
     max-width: 90vw;
