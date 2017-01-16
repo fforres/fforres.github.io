@@ -1,4 +1,5 @@
 import Component from 'inferno-component';
+import style from './style.css';
 
 export class Landing extends Component {
   constructor(props) {
@@ -9,10 +10,10 @@ export class Landing extends Component {
   }
   render() {
     return (
-      <div className="row center section" id="hi">
-        <div className="col-xs-8 text">
-          <p>
-            My name is <b>Felipe Torres.</b> I'm a
+      <div className={style.textArea} id="hi">
+        <div className={style.paragraphsContainer}>
+          <p className={style.paragraph}>
+            My name is <b>Felipe Torres.</b> I&apos;m a
             <span><a
               href="https://github.com/fforres"
               rel="noopener noreferrer"
@@ -21,7 +22,7 @@ export class Landing extends Component {
             >software engineer</a></span> by choice, an educator at heart
             <span className="red">
               <i className="fa fa-fw fa-heart" />
-            </span>. I'm very passionate about software communities.
+            </span>. I&apos;m very passionate about software communities.
             A Chilean living in
             <span><a
               href="https://es.wikipedia.org/wiki/Santiago_de_Chile"
@@ -30,16 +31,16 @@ export class Landing extends Component {
               className="link sliding-middle-out-dark"
             >Santiago de Chile.</a></span>
           </p>
-          <p>
+          <p className={style.paragraph}>
             More than anything I enjoy solving problems using technology,
-            I'm the kind of person that gets bored without a challenge.
+            I&apos;m the kind of person that gets bored without a challenge.
             I currently work at Groupon, which it has a lot of interesting
             problems to solve.
           </p>
-          <p>
+          <p className={style.paragraph}>
             I like working with interesting people,
             learning, teaching and being able to communicate that,
-            that's why I run the
+            that&apos;s why I run the
             <span><a
               href="http://meetupjs.cl"
               rel="noopener noreferrer"
@@ -60,9 +61,9 @@ export class Landing extends Component {
             >Noders</a></span>.
 
           </p>
-          <p>
+          <p className={style.paragraph}>
             On my free time I co-host a podcasts,
-            I'm taking salsa lessons and hike whenever I can, sometimes I post on
+            I&apos;m taking salsa lessons and hike whenever I can, sometimes I post on
             <span><a
               href="https://twitter.com/fforres"
               rel="noopener noreferrer"
@@ -76,8 +77,8 @@ export class Landing extends Component {
               className="link sliding-middle-out-dark"
             >facebook</a></span>
           </p>
-          <p>
-            I've worked at various startups and with very interesting people, you can read more on my
+          <p className={style.paragraph}>
+            I&apos;ve worked at various startups and with very interesting people, you can read more on my
             <span><a
               href="cl.linkedin.com/in/fforres"
               rel="noopener noreferrer"
@@ -91,8 +92,9 @@ export class Landing extends Component {
               className="link sliding-middle-out-dark"
             >my cv</a></span>.
           </p>
-          <p>
-            If you have any questions, feedback or just want to say hi, (That would be awesome) you can mail me at
+          <p className={style.paragraph}>
+            If you have any questions, feedback or just want to say hi, (That would be awesome)
+            you can mail me at
             <span><a
               href="mailto:felipe.torressepulveda@gmail.com"
               rel="noopener noreferrer"
