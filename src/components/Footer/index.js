@@ -1,11 +1,7 @@
 import Component from 'inferno-component';
-import {
-  row,
-  center,
-  section,
-} from '../../styles';
+import style from './style.css';
+import Division from '../Division';
 
-import { footer, link } from './style';
 
 export class Landing extends Component {
   constructor(props) {
@@ -15,14 +11,14 @@ export class Landing extends Component {
   render() {
     return (
       <div
-        // className="row center section"
-        className={`${row} ${center} ${section}`}
+        className={style.footer}
       >
-        <div className={`col-xs-8 ${footer}`}>
+        <Division />
+        <div className={`col-xs-8`}>
           <a
             href="http://twitter.com/fforres"
             rel="noopener noreferrer"
-            className={`${link}`}
+            className={`${style.link}`}
             target="_blank"
           >
             <i className="fa fa-fw fa-twitter" />
@@ -30,7 +26,7 @@ export class Landing extends Component {
           <a
             href="http://facebook.com/fforres"
             rel="noopener noreferrer"
-            className={`${link}`}
+            className={`${style.link}`}
             target="_blank"
           >
             <i className="fa fa-fw fa-facebook" />
@@ -38,7 +34,7 @@ export class Landing extends Component {
           <a
             href="https://cl.linkedin.com/in/fforres"
             rel="noopener noreferrer"
-            className={`${link}`}
+            className={`${style.link}`}
             target="_blank"
           >
             <i className="fa fa-fw fa-linkedin" />
@@ -46,7 +42,7 @@ export class Landing extends Component {
           <a
             href="http://github.com/fforres"
             rel="noopener noreferrer"
-            className={`${link}`}
+            className={`${style.link}`}
             target="_blank"
           >
             <i className="fa fa-fw fa-github" />
@@ -54,7 +50,7 @@ export class Landing extends Component {
           <a
             href="http://flickr.com/fforres"
             rel="noopener noreferrer"
-            className={`${link}`}
+            className={`${style.link}`}
             target="_blank"
           >
             <i className="fa fa-fw fa-flickr" />
@@ -62,7 +58,7 @@ export class Landing extends Component {
           <a
             href="mailto:felipe.torressepulveda@gmail.com"
             rel="noopener noreferrer"
-            className={`${link}`}
+            className={`${style.link}`}
             target="_blank"
           >
             <i className="fa fa-fw fa-envelope" />

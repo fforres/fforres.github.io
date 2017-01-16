@@ -42,7 +42,7 @@ export class Landing extends Component {
             learning, teaching and being able to communicate that,
             that&apos;s why I run the
             <span><a
-              href="http://meetupjs.cl"
+              href="https://www.meetup.com/es/Javascript-Chile/"
               rel="noopener noreferrer"
               target="_blank"
               className="link sliding-middle-out-dark"
@@ -78,7 +78,8 @@ export class Landing extends Component {
             >facebook</a></span>
           </p>
           <p className={style.paragraph}>
-            I&apos;ve worked at various startups and with very interesting people, you can read more on my
+            I&apos;ve worked at various startups and with very
+            interesting people, you can read more on my
             <span><a
               href="cl.linkedin.com/in/fforres"
               rel="noopener noreferrer"
