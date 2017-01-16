@@ -1,4 +1,5 @@
 import Component from 'inferno-component';
+import style from './style.css';
 
 export class Landing extends Component {
   constructor(props) {
