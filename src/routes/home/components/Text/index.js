@@ -62,6 +62,15 @@ export class Landing extends Component {
 
           </p>
           <p className={style.paragraph}>
+            I also like <a
+              href="./talks.html"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="link sliding-middle-out-dark"
+            > giving talks / keynotes and presentations</a>.
+          </p>
+
+          <p className={style.paragraph}>
             On my free time I co-host a podcasts,
             I&apos;m taking salsa lessons and hike whenever I can, sometimes I post on
             <span><a
