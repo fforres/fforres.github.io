@@ -10,11 +10,11 @@ export class TopBar extends Component {
     return (
       <div className={style['top-bar-wrapper']}>
         <a
-          className={''}
+          className={style['top-bar-link']}
           href="/"
         > Home </a>
         <a
-          className={''}
+          className={style['top-bar-link']}
           href="/talks.html"
         > Talks </a>
       </div>
