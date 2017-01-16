@@ -17,7 +17,6 @@ var routes = ['home', 'talks'];
 
 function entries(arr) {
   const ob = {};
-  ob.entry = path.resolve(__dirname, '..', 'src/entry.js');
   arr.forEach((el) => {
     ob[el] = path.resolve(__dirname, '..', 'src/routes', el, 'index.js');
   });

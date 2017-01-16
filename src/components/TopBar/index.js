@@ -1,5 +1,4 @@
 import Component from 'inferno-component';
-import underline from '../../styles/underline.css';
 import style from './style.css';
 
 export class TopBar extends Component {
@@ -11,11 +10,11 @@ export class TopBar extends Component {
     return (
       <div className={style['top-bar-wrapper']}>
         <a
-          className={underline['sliding-middle-out']}
+          className={''}
           href="/"
         > Home </a>
         <a
-          className={underline['sliding-middle-out']}
+          className={''}
           href="/talks.html"
         > Talks </a>
       </div>

@@ -1,13 +1,6 @@
-import 'bootstrap/scss/bootstrap.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
 
 import './fonts.css';
-import './main.scss';
-import './underline.scss';
-
-export {
-  row,
-  center,
-  section,
-  slidingMiddleOut,
-} from './globals';
+import './main.css';
+import './underline.css';

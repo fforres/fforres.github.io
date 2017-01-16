@@ -15,7 +15,6 @@ var routes = ['home', 'talks'];
 
 function entries(arr) {
   const ob = {};
-  ob.entry = path.resolve(__dirname, '..', 'src/entry.js');
   arr.forEach((el) => {
     ob[el] = path.resolve(__dirname, '..', 'src/routes', el, 'index.js');
   });
@@ -27,14 +26,14 @@ function htmlPlugins(arr) {
     return new HtmlWebpackPlugin({
       title: 'fforr.es <3 web things',
       filename: el + '.html',
-      chunks: ['entry', el],
-      template: path.resolve(__dirname, '../src/routes', 'talks', 'index.ejs'),
+      chunks: [el],
+      template: path.resolve(__dirname, '../src/routes', el, 'index.ejs'),
     });
   });
   newArray.push(new HtmlWebpackPlugin({
     title: 'fforr.es <3 web things',
     filename: 'index.html',
-    chunks: ['entry', 'home'],
+    chunks: ['home'],
     template: path.resolve(__dirname, '../src/routes', 'home', 'index.ejs'),
   }));
   return newArray;
@@ -51,6 +50,13 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.css$/,
+      exclude: /node_modules/,
+      loaders: [
+        'style-loader?sourceMap',
+        'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+      ],
+    }, {
+      test: /\.css$/,
       include: /node_modules/,
       loader: ExtractTextPlugin.extract({
         fallbackLoader: 'style-loader',
@@ -58,19 +64,12 @@ module.exports = {
       }),
     }, {
       test: /\.css$/,
-      exclude: /node_modules/,
-      loaders: [
-        'style-loader?sourceMap',
-        'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
-      ],
-    }, {
-      test: /\.scss$/,
-      loaders: [
-        'style-loader?sourceMap',
-        'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
-        'resolve-url-loader',
-        'sass-loader?sourceMap',
-      ],
+      exclude: /src/,
+      include: /src\/styles/,
+      loader: ExtractTextPlugin.extract({
+        fallbackLoader: 'style-loader',
+        loader: 'css-loader',
+      }),
     }, {
       test: /.*\.(gif|png|jpe?g|svg)$/i,
       loaders: [

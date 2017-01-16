@@ -1,5 +1,8 @@
 import Inferno from 'inferno';
 
+import '../../js';
+import '../../styles';
+
 import TopBar from '../../components/TopBar';
 import Footer from '../../components/Footer';
 

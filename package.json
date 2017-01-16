@@ -7,7 +7,7 @@
     "yolo": "npm run build && npm run deploy",
     "deploy": "gh-pages -d dist -b master",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env NODE_ENV=development ./node_modules/.bin/webpack-dev-server --config webpack/webpack.config.js --progress --colors --inline --hot --profile --info",
+    "start": "cross-env NODE_ENV=development ./node_modules/.bin/webpack-dev-server --config webpack/webpack.config.js --progress --colors --inline --hot --profile --info --port 3000",
     "prebuild": "rimraf dist",
     "build": "cross-env NODE_ENV=production ./node_modules/.bin/webpack --config webpack/webpack.prod.config.js --progress --colors"
   },
