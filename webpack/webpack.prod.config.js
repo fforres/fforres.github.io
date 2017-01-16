@@ -9,8 +9,10 @@
 var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var routes = ['home', 'talks'];
+
 
 function entries(arr) {
   const ob = {};
@@ -27,7 +29,7 @@ function htmlPlugins(arr) {
       title: 'fforr.es <3 web things',
       filename: el + '.html',
       chunks: ['entry', el],
-      template: path.resolve(__dirname, '../src/routes', 'talks', 'index.ejs'),
+      template: path.resolve(__dirname, '../src/routes', el, 'index.ejs'),
     });
   });
   newArray.push(new HtmlWebpackPlugin({
@@ -44,12 +46,20 @@ module.exports = {
   devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, '..', 'dist'),
-    filename: '[name].bundle.js',
-    sourceMapFilename: '[name].map',
+    filename: '[name].[hash].bundle.js',
+    chunkFilename: '[id].[hash].bundle.js',
   },
   module: {
     loaders: [{
       test: /\.css$/,
+      include: /node_modules/,
+      loader: ExtractTextPlugin.extract({
+        fallbackLoader: 'style-loader',
+        loader: 'css-loader',
+      }),
+    }, {
+      test: /\.css$/,
+      exclude: /node_modules/,
       loaders: [
         'style-loader?sourceMap',
         'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
@@ -83,11 +93,26 @@ module.exports = {
       loader: 'babel-loader',
       query: {
         presets: ['es2015'],
-        plugins: ['transform-runtime', 'inferno'],
+        plugins: [
+          'transform-runtime',
+          'inferno',
+        ],
       },
     }],
   },
+  resolve: {
+    alias: {
+      react: 'inferno-compat',
+      'react-dom': 'inferno-compat',
+    },
+  },
   plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: true,
+      compress: { warnings: false },
+    }),
+
+    new ExtractTextPlugin('extracted.css'),
     new webpack.ProvidePlugin({
       $: 'jquery',
       'window.$': 'jquery',
@@ -105,12 +130,5 @@ module.exports = {
     new webpack.ProvidePlugin({
       _: 'lodash',
     }),
-    ['module-resolver', {
-      root: ['.'],
-      alias: {
-        react: 'inferno-compat',
-        'react-dom': 'inferno-compat',
-      },
-    }],
   ].concat(htmlPlugins(routes)),
 };
