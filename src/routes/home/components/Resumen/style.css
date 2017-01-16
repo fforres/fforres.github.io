@@ -1,0 +1,29 @@
+.resumeArea {
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 4em;
+
+}
+
+.container {
+  max-width: 75vw;
+  color: rgb(45, 45, 45);
+  color: rgba(45, 45, 45, 1);
+  font-size: 1.3em;
+  font-family: 'Roboto Slab', serif;
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 90vw;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container {
+    max-width: 55vw;
+  }
+}

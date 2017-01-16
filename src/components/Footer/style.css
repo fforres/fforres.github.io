@@ -1,0 +1,31 @@
+.footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1rem;
+  font-size: 1.3em;
+
+  height: 10rem;
+  background-color: lightgrey;
+}
+
+.link {
+  font-size: 1.2em;
+  color: rgba(45, 45, 45, 1);
+  transition: all 400ms ease;
+}
+
+.link:hover: {
+  text-decoration: none;
+  color: rgba(45, 45, 45, 0.7);
+};
+.link:focus: {
+  text-decoration: none;
+  color: rgba(45, 45, 45, 0.7);
+};
+.link:active: {
+  text-decoration: none;
+  color: rgba(45, 45, 45, 0.7);
+};
