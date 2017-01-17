@@ -1,0 +1,34 @@
+.talksArea {
+  padding-top: 5rem;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 4em;
+}
+
+.container {
+  padding-top: 2rem;
+  width: 65vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+/*.paragraph {
+  padding-top: 1.6em;
+}*/
+
+@media (max-width: 600px) {
+  .container {
+    width: 80vw;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container {
+    width: 55vw;
+  }
+}

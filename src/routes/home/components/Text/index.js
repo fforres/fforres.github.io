@@ -90,7 +90,7 @@ export class Landing extends Component {
             I&apos;ve worked at various startups and with very
             interesting people, you can read more on my
             <span><a
-              href="cl.linkedin.com/in/fforres"
+              href="http://cl.linkedin.com/in/fforres"
               rel="noopener noreferrer"
               target="_blank"
               className="link sliding-middle-out-dark"

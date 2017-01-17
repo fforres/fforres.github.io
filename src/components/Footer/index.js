@@ -4,8 +4,6 @@ import { Icon } from 'react-fa';
 import style from './style.css';
 import Division from '../Division';
 
-console.log(style.iconsContainer_Base);
-
 export class Landing extends Component {
   constructor(props) {
     super(props);
