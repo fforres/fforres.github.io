@@ -1,5 +1,7 @@
 import Inferno from 'inferno';
 
+import Talks from './components/Talks';
+
 import '../../js';
 import '../../styles';
 
@@ -9,6 +11,7 @@ import Footer from '../../components/Footer';
 const app = () => (
   <div>
     <TopBar />
+    <Talks />
     <Footer />
   </div>
 );

@@ -1,0 +1,19 @@
+.talk {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  text-align: left;
+}
+.organizacion {
+  font-size: 1.2rem;
+}
+.descripcion {
+  font-size: 0.9rem;
+}
+
+.fecha {
+  font-size: 0.8rem;
+}
