@@ -1,6 +1,7 @@
 import Inferno from 'inferno';
 
 import Talks from './components/Talks';
+import Landing from './components/Landing';
 
 import '../../js';
 import '../../styles';
@@ -11,6 +12,7 @@ import Footer from '../../components/Footer';
 const app = () => (
   <div>
     <TopBar />
+    <Landing />
     <Talks />
     <Footer />
   </div>
