@@ -20,15 +20,26 @@
 /*.paragraph {
   padding-top: 1.6em;
 }*/
+.title {
+  display: flex;
+  width: 75vw;
+  align-content: flex-start;
+}
 
 @media (max-width: 600px) {
   .container {
     width: 80vw;
+  }
+  .title {
+    width: 90vw;
   }
 }
 
 @media (min-width: 1300px) {
   .container {
     width: 55vw;
+  }
+  .title {
+    width: 60vw;
   }
 }
