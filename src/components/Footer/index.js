@@ -15,7 +15,7 @@ export class Landing extends Component {
         className={style.footer}
       >
         <Division />
-        <div className={style.iconsContainer}>
+        <div className={style.iconscontainer}>
           <a
             href="http://twitter.com/fforres"
             rel="noopener noreferrer"

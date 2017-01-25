@@ -60,7 +60,7 @@ export class Landing extends Component {
               rel="noopener noreferrer"
               target="_blank"
               className={`${style.link} sliding-middle-out`}
-            >I also made a &quot;Groupon-coupon-like-website&quot; selling... me? </a>
+            >I also made a &quot;Groupon-coupon-like-website&quot; selling... me. </a>
           </p>
           <p>
             <a
