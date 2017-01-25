@@ -96,7 +96,7 @@ export class Landing extends Component {
               className="link sliding-middle-out-dark"
             >linkedin profile</a></span> or by looking onto
             <span><a
-              href="https://drive.google.com/file/d/0B0-c8vrue2QqdTFoVTB2bmw1aVU/view?usp=sharing"
+              href="https://drive.google.com/open?id=1zyPmrxMJmP61lOdVBh3kbQ8h_U56103bvQMx8NcJFlU"
               rel="noopener noreferrer"
               target="_blank"
               className="link sliding-middle-out-dark"
