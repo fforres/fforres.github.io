@@ -1,5 +1,5 @@
 .landingContainer {
-  width: 100vw;
+  width: 100%;
   height: 90vh;
   display: flex;
   flex-flow: column;
@@ -10,7 +10,7 @@
 .photoBackground {
   position: absolute;
   height: 90vh;
-  width: 100vw;
+  width: 100%;
   background-image: url('./fforres.jpeg');
   background-repeat: no-repeat;
   background-size: cover;

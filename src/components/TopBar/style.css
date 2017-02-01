@@ -1,6 +1,6 @@
 .top-bar-wrapper {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: row;
