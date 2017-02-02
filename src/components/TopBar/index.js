@@ -17,6 +17,10 @@ export class TopBar extends Component {
           className={style['top-bar-link']}
           href="/talks.html"
         > Talks </a>
+        <a
+          className={style['top-bar-link']}
+          href="/projects.html"
+        > Projects </a>
       </div>
     );
   }

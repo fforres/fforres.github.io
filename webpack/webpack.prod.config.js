@@ -7,18 +7,21 @@
     prefer-template
 */
 var path = require('path');
+var fs = require('fs');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
-var routes = ['home', 'talks'];
-
+var sourcePath = path.resolve(__dirname, '../src/routes');
+var routes = fs.readdirSync(sourcePath).filter(function (file) {
+  return fs.statSync(path.join(sourcePath, file)).isDirectory();
+});
 
 function entries(arr) {
   const ob = {};
   arr.forEach((el) => {
-    ob[el] = path.resolve(__dirname, '..', 'src/routes', el, 'index.js');
+    ob[el] = path.resolve(sourcePath, el, 'index.js');
   });
   return ob;
 }
@@ -29,14 +32,14 @@ function htmlPlugins(arr) {
       title: 'fforr.es <3 web things',
       filename: el + '.html',
       chunks: ['entry', el],
-      template: path.resolve(__dirname, '../src/routes', el, 'index.ejs'),
+      template: path.resolve(sourcePath, el, 'index.ejs'),
     });
   });
   newArray.push(new HtmlWebpackPlugin({
     title: 'fforr.es <3 web things',
     filename: 'index.html',
     chunks: ['entry', 'home'],
-    template: path.resolve(__dirname, '../src/routes', 'home', 'index.ejs'),
+    template: path.resolve(sourcePath, 'home', 'index.ejs'),
   }));
   return newArray;
 }
