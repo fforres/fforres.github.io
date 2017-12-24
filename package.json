@@ -10,9 +10,7 @@
     "dev": "preact watch",
     "lint": "eslint src"
   },
-  "eslintIgnore": [
-    "build/*"
-  ],
+  "eslintIgnore": ["build/*"],
   "devDependencies": {
     "eslint": "^4.9.0",
     "eslint-config-standard": "^11.0.0-beta.0",
