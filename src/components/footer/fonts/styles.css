@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "fforres-font";
+  src: url("./fonts/fforres-font.eot");
+  src: url("./fonts/fforres-font.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/fforres-font.woff") format("woff"),
+    url("./fonts/fforres-font.ttf") format("truetype"),
+    url("./fonts/fforres-font.svg#fforres-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "fforres-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fforres-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin-square:before {
+  content: "\63";
+}
+.icon-facebook-square:before {
+  content: "\62";
+}
+.icon-twitter-square:before {
+  content: "\61";
+}
+.icon-github-square:before {
+  content: "\64";
+}
+.icon-envelope-square:before {
+  content: "\65";
+}
+.icon-flickr:before {
+  content: "\66";
+}

@@ -40,11 +40,13 @@
 }
 
 .salutation {
-  text-align: center;
   font-weight: bold;
 }
 .presentation {
   font-size: 1.4em;
+  text-align: center;
+}
+.presentationSmall {
   text-align: center;
 }
 

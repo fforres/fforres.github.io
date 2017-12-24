@@ -69,7 +69,7 @@ export class homeHero extends Component {
               </a>
             </span>
           </p>
-          <p className="presentacion">
+          <p className={ style.presentationSmall }>
             <a
               className={ `${style.link} sliding-middle-out-dark` }
               href="//fforr.es/gpn"
