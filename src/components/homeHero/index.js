@@ -10,31 +10,23 @@ export class homeHero extends Component {
   }
   onClick(e) {
     e.preventDefault();
-    this.setState(
-      {
-        pos: document.getElementById('hi').offsetTop,
-        time: 200
-      },
-      this.setScroll
-    );
+    this.setScroll();
   }
   setScroll() {
-    const { pos, time } = this.state;
-    let currentPos = document.body.scrollTop;
-    const int = setInterval(() => {
-      window.scrollTo(0, currentPos + pos / time + 7);
-      currentPos = document.body.scrollTop;
-      if (currentPos >= pos) {
-        clearInterval(int);
-      }
-    }, pos / time);
+    const position = document.getElementById('hi');
+    position.scrollIntoView({
+      behavior: 'smooth'
+    });
   }
   render() {
     return (
       <div className={ style.container }>
         <div className={ style.photoBackground } />
         <div className={ style.title }>
-          <h1 className={ style.salutation }>I&apos;m fforres!</h1>
+          <h1 className={ style.salutation }>
+            I'm fforres
+            <span className={ style.wave }>👋</span>
+          </h1>
           <p className={ style.presentation }>
             <span>I enjoy </span>
             <span>
@@ -80,11 +72,9 @@ export class homeHero extends Component {
               me.
             </a>
           </p>
-          <p>
-            <a href="#hi" id="tohi" onClick={ this.onClick }>
-              <i className="fa fa-fw fa-caret-down" />
-            </a>
-          </p>
+          <a className={ style.caret } href="#hi" onClick={ this.onClick }>
+            <span className={ style.caretIcon } />
+          </a>
         </div>
       </div>
     );

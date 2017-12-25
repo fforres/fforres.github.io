@@ -1,4 +1,5 @@
 import { h, Component } from 'preact';
+import Division from '../Division';
 import style from './style.css';
 
 export class Landing extends Component {
@@ -11,6 +12,7 @@ export class Landing extends Component {
   render() {
     return (
       <div className={ style.resumeArea }>
+        <Division />
         <div className={ style.container }>
           <h4>
             If you need a smaller resume, I <span>have your back</span>:
