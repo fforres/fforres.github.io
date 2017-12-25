@@ -14,7 +14,7 @@ export class Landing extends Component {
       <div className={ style.resumeArea }>
         <Division />
         <div className={ style.container }>
-          <h4>
+          <h4 className={ style.title }>
             If you need a smaller resume, I <span>have your back</span>:
           </h4>
           <p className={ style.paragraph }>
