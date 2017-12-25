@@ -11,9 +11,20 @@
   color: rgba(45, 45, 45, 1);
   font-size: 1.3em;
 }
+
 .paragraph {
-  line-height: 1.7em;
+  margin-bottom: 0.5rem;
 }
+.paragraph,
+.paragraph * {
+  line-height: 1.7em;
+  font-size: 0.91em;
+}
+
+.link {
+  text-decoration: none;
+}
+
 @media (max-width: 600px) {
   .paragraphsContainer {
     max-width: 90vw;

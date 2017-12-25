@@ -1,4 +1,5 @@
 import { h, Component } from 'preact';
+import { Link } from 'preact-router/match';
 import style from './style.css';
 
 export class Landing extends Component {
@@ -18,7 +19,7 @@ export class Landing extends Component {
             </span>
             <span> I&apos;m a </span>
             <a
-              className="link sliding-middle-out-dark"
+              className={ style.link }
               href="https://github.com/fforres"
               rel="noopener noreferrer"
               target="_blank"
@@ -33,7 +34,7 @@ export class Landing extends Component {
             </span>
             <span> living in </span>
             <a
-              className="link sliding-middle-out-dark"
+              className={ style.link }
               href="https://es.wikipedia.org/wiki/Santiago_de_Chile"
               rel="noopener noreferrer"
               target="_blank"
@@ -49,7 +50,7 @@ export class Landing extends Component {
             </span>
             <span> used to work for </span>
             <a
-              className="link sliding-middle-out-dark"
+              className={ style.link }
               href="https://groupon.com"
               rel="noopener noreferrer"
               target="_blank"
@@ -58,7 +59,7 @@ export class Landing extends Component {
             </a>
             <span> but nowadays I work at </span>
             <a
-              className="link sliding-middle-out-dark"
+              className={ style.link }
               href="https://axiomzen.co"
               rel="noopener noreferrer"
               target="_blank"
@@ -69,9 +70,9 @@ export class Landing extends Component {
               making all sorts of cool and geek things using JS, with an amazing
               group of people!
             </span>
-            <span>(you can check them </span>
+            <span> (you can check them </span>
             <a
-              className="link sliding-middle-out-dark"
+              className={ style.link }
               href="https://www.axiomzen.co/about#team"
               rel="noopener noreferrer"
               target="_blank"
@@ -87,7 +88,7 @@ export class Landing extends Component {
             </span>
             <span> run the </span>
             <a
-              className="link sliding-middle-out-dark"
+              className={ style.link }
               href="https://www.meetup.com/es/Javascript-Chile/"
               rel="noopener noreferrer"
               target="_blank"
@@ -96,7 +97,7 @@ export class Landing extends Component {
             </a>
             <span> , the </span>
             <a
-              className="link sliding-middle-out-dark"
+              className={ style.link }
               href="http://nodeschool.cl"
               rel="noopener noreferrer"
               target="_blank"
@@ -105,7 +106,7 @@ export class Landing extends Component {
             </a>
             <span> events, and why I started </span>
             <a
-              className="link sliding-middle-out-dark"
+              className={ style.link }
               href="http://noders.com"
               rel="noopener noreferrer"
               target="_blank"
@@ -115,14 +116,9 @@ export class Landing extends Component {
           </p>
           <p className={ style.paragraph }>
             <span>I also enjoy </span>
-            <a
-              className="link sliding-middle-out-dark"
-              href="./talks.html"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <span>giving talks and presentations.</span>
-            </a>
+            <Link className={ style.link } href="/projects" sasd>
+              giving talks and presentations.
+            </Link>
           </p>
 
           <p className={ style.paragraph }>
@@ -132,7 +128,7 @@ export class Landing extends Component {
             </span>
             <span> I post on </span>
             <a
-              className="link sliding-middle-out-dark"
+              className={ style.link }
               href="https://twitter.com/fforres"
               rel="noopener noreferrer"
               target="_blank"
@@ -141,7 +137,7 @@ export class Landing extends Component {
             </a>
             <span> and on </span>
             <a
-              className="link sliding-middle-out-dark"
+              className={ style.link }
               href="https://www.facebook.com/fforr.es"
               rel="noopener noreferrer"
               target="_blank"
@@ -156,7 +152,7 @@ export class Landing extends Component {
             </span>
             <span> on my </span>
             <a
-              className="link sliding-middle-out-dark"
+              className={ style.link }
               href="http://cl.linkedin.com/in/fforres"
               rel="noopener noreferrer"
               target="_blank"
@@ -165,7 +161,7 @@ export class Landing extends Component {
             </a>
             <span> or by looking onto </span>
             <a
-              className="link sliding-middle-out-dark"
+              className={ style.link }
               href="https://drive.google.com/open?id=1zyPmrxMJmP61lOdVBh3kbQ8h_U56103bvQMx8NcJFlU"
               rel="noopener noreferrer"
               target="_blank"
@@ -181,7 +177,7 @@ export class Landing extends Component {
             <span> at </span>
 
             <a
-              className="link sliding-middle-out-dark"
+              className={ style.link }
               href="mailto:felipe.torressepulveda@gmail.com"
               rel="noopener noreferrer"
               target="_blank"
