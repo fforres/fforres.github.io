@@ -1,11 +1,11 @@
 .talksArea {
-  padding-top: 5rem;
   width: 100%;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
   padding-bottom: 4em;
+  padding-top: 7em;
 }
 
 .container {
