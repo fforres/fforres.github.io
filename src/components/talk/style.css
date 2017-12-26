@@ -10,10 +10,12 @@
 }
 
 .link {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   text-decoration: none;
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.6rem;
+  color: #0275d8;
+  text-decoration: none;
 }
 
 .title {
@@ -31,6 +33,7 @@
 
 .talkLink {
   padding-left: 0.8em;
+  font-weight: 300;
 }
 .descripcion {
   font-size: 0.9rem;

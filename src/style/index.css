@@ -12,6 +12,9 @@ body {
 }
 
 * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
