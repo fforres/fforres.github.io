@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Noders",
+    "descripcionCorta": "A JavaScript and NodeJS community in Latin America.",
+    "descripcion":
+      "We focus on helping the JS community grow and thrive by creating Meetups, events, hackathons, conferences and free lessons.",
+    "link": "http://www.noders.com",
+    "img": "https://cdn.rawgit.com/fforres/gpn/master/images/noders.jpg",
+    "collaborators": [{}]
+  },
+  {
+    "title": "Preguntas Entrevistas Frontend",
+    "descripcionCorta":
+      "A repo of questions and answers for frontend interviews.",
+    "descripcion":
+      "We aim to have a spanish written repo with frontend interviews questions, and it's answers, for studying purposes, as well as tips for both interviewers and candidates.",
+    "link":
+      "https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend",
+    "img":
+      "https://cdn.rawgit.com/fforres/gpn/master/images/frontendinterview.PNG",
+    "collaborators": [{}]
+  },
+  {
+    "title": "EventLoop2016",
+    "descripcionCorta":
+      "Opensource - non-profit 2 day Hackathon for JavaScript & NodeJS Devs.",
+    "descripcion":
+      "An opensource - non-profit hackathon focused on BigData, Data Visualization, OSS, Javascript & NodeJS (Thanks to the Ciudad the México JS (meetup.com/es-ES/eventloop) community for the right to use the name).",
+    "link":
+      "https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend",
+    "img":
+      "https://cdn.rawgit.com/fforres/gpn/master/images/frontendinterview.PNG",
+    "collaborators": [{}]
+  },
+  {
+    "title": "MeetupJS Santiago",
+    "descripcionCorta": "Santiago monthly JavaScript meetups.",
+    "descripcion":
+      "A Monthly JavaScript meetup! By geeks, for geeks, because we like it (Brought by the awesome team @ Noders).",
+    "link": "https://www.meetup.com/es/Javascript-Chile/",
+    "img": "https://cdn.rawgit.com/fforres/gpn/master/images/meetupjs.jpg",
+    "collaborators": [{}]
+  },
+  {
+    "title": "NodeSchool Santiago",
+    "descripcionCorta": "Santiago, Chile NodeSchool Chapter.",
+    "descripcion":
+      "We organize events to let people learn and have fun with JS (It works awesome!).",
+    "link": "https://www.meetup.com/es/Javascript-Chile/",
+    "img": "https://cdn.rawgit.com/fforres/gpn/master/images/nodeschool.jpg",
+    "collaborators": [{}]
+  },
+  {
+    "title": "In Plain.js",
+    "descripcionCorta": "Widgets and sites without frameworks.",
+    "descripcion":
+      "Aim to replicate website's UI / Widgets / Projects in plain old CSS/JS/HTML for learning purposes.",
+    "link": "http://www.fforr.es/in_plain_js/",
+    "img": "https://cdn.rawgit.com/fforres/gpn/master/images/inplainjs.gif",
+    "collaborators": [{}]
+  },
+  {
+    "title": "ImpactON 2015",
+    "descripcionCorta": "3 day Social Impact Hackathon.",
+    "descripcion":
+      "OpenSource and collaborative hackathon with an aim on creating and validating social impact projects. Getting together Academia, entrepreneurs, private sector and government.",
+    "link": "http://impacton.org/",
+    "img":
+      "https://cdn.rawgit.com/fforres/gpn/master/images/8c2abf23bcdf72ff1aa83dd2151b6639_limited.png",
+    "collaborators": [{}]
+  }
+]

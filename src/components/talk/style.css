@@ -1,15 +1,36 @@
 .talk {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  width: 100%;
+  padding-top: 1.8em;
+  padding-bottom: 1.8em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-content: flex-start;
   text-align: left;
 }
+
 .link {
   font-size: 1.2rem;
+  font-weight: 700;
   text-decoration: none;
+  padding-bottom: 0.4rem;
+}
+
+.title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.talkTitle {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: 0.3em;
+}
+
+.talkLink {
+  padding-left: 0.8em;
 }
 .descripcion {
   font-size: 0.9rem;
@@ -17,4 +38,5 @@
 
 .fecha {
   font-size: 0.8rem;
+  text-align: right;
 }

@@ -16,19 +16,22 @@ export class Talk extends Component {
     ) : null;
     return (
       <div className={ style.talk }>
-        <a
-          className={ style.link }
-          href={ this.props.talk.organizacion.link }
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          { this.props.talk.organizacion.nombre }
-        </a>
         <div className={ style.title }>
-          { this.props.talk.title } { link }
+          <a
+            className={ style.link }
+            href={ this.props.talk.organizacion.link }
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            { this.props.talk.organizacion.nombre }
+          </a>
+          <div className={ style.fecha }> { this.props.talk.fecha } </div>
+        </div>
+        <div className={ style.talkTitle }>
+          <span>{ this.props.talk.title }</span>
+          <span className={ style.talkLink }>{ link }</span>
         </div>
         <div className={ style.descripcion }> { this.props.talk.descripcion } </div>
-        <div className={ style.fecha }> { this.props.talk.fecha } </div>
       </div>
     );
   }
