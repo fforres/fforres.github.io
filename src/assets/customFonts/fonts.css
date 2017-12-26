@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "fforres-font";
-  src: url("./fonts/fforres-font.eot");
-  src: url("./fonts/fforres-font.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/fforres-font.woff") format("woff"),
-    url("./fonts/fforres-font.ttf") format("truetype"),
-    url("./fonts/fforres-font.svg#fforres-font") format("svg");
+  src: url("./fforres-font.eot");
+  src: url("./fforres-font.eot?#iefix") format("embedded-opentype"),
+    url("./fforres-font.woff") format("woff"),
+    url("./fforres-font.ttf") format("truetype"),
+    url("./fforres-font.svg#fforres-font") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -54,4 +54,7 @@
 }
 .icon-flickr:before {
   content: "\66";
+}
+.icon-external-link:before {
+  content: "\67";
 }

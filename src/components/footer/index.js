@@ -1,13 +1,11 @@
 import { h, Component } from 'preact';
 import style from './style.css';
-import fontStyle from './fonts/styles.css';
+import fontStyle from '../../assets/customFonts/fonts.css';
 import Division from '../Division';
 
+console.log(fontStyle);
+console.log(style);
 export class Landing extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
   render() {
     return (
       <div className={ style.footer }>
@@ -19,7 +17,7 @@ export class Landing extends Component {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <span className={ fontStyle['icon-twitter-square'] } />
+            <span className={ 'icon-twitter-square' } />
           </a>
           <a
             className={ style.link }
@@ -27,7 +25,7 @@ export class Landing extends Component {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <span className={ fontStyle['icon-facebook-square'] } />
+            <span className={ 'icon-facebook-square' } />
           </a>
           <a
             className={ style.link }
@@ -35,7 +33,7 @@ export class Landing extends Component {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <span className={ fontStyle['icon-linkedin-square'] } />
+            <span className={ 'icon-linkedin-square' } />
           </a>
           <a
             className={ style.link }
@@ -43,7 +41,7 @@ export class Landing extends Component {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <span className={ fontStyle['icon-github-square'] } />
+            <span className={ 'icon-github-square' } />
           </a>
           <a
             className={ style.link }
@@ -51,7 +49,7 @@ export class Landing extends Component {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <span className={ fontStyle['icon-flickr'] } />
+            <span className={ 'icon-flickr' } />
           </a>
           <a
             className={ style.link }
@@ -59,7 +57,7 @@ export class Landing extends Component {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <span className={ fontStyle['icon-envelope-square'] } />
+            <span className={ 'icon-envelope-square' } />
           </a>
         </div>
       </div>
