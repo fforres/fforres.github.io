@@ -1,11 +1,9 @@
 import { h, Component } from 'preact';
 import PropTypes from 'prop-types';
-import fontStyle from '../../assets/customFonts/fonts.css';
 import style from './style.css';
 
 export class Talk extends Component {
   render() {
-    console.log(this.props.talk.talk, fontStyle);
     const link = this.props.talk.talk.length ? (
       <a
         className={ style.link }
@@ -16,7 +14,6 @@ export class Talk extends Component {
         <span className={ 'icon-external-link' } />
       </a>
     ) : null;
-    // const link = null;
     return (
       <div className={ style.talk }>
         <a

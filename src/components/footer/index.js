@@ -1,10 +1,7 @@
 import { h, Component } from 'preact';
 import style from './style.css';
-import fontStyle from '../../assets/customFonts/fonts.css';
 import Division from '../Division';
 
-console.log(fontStyle);
-console.log(style);
 export class Landing extends Component {
   render() {
     return (
