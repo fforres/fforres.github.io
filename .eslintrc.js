@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['standard', 'standard-preact'],
+  extends: ['standard', 'standard-preact', 'prettier'],
   rules: {
     'react/jsx-uses-react': 2,
     'react/jsx-uses-vars': 2,
@@ -103,6 +103,10 @@ module.exports = {
         requiredFirst: 0,
         sortShapeProp: 1
       }
-    ]
+    ],
+    'prefer-const': ['error'],
+    'react/jsx-indent': ['true', 2],
+    'react/jsx-indent-props': ['true', 2],
+    'no-debugger': ['off']
   }
-};
+}

@@ -1,4 +1,5 @@
 import { h, Component } from 'preact'
+import style from './style'
 import HomeHero from '../../components/homeHero'
 import HomeText from '../../components/homeText'
 import HomeResume from '../../components/homeResume'
