@@ -7,6 +7,8 @@ import Home from '../routes/home'
 import OldHome from '../routes/oldhome'
 import Projects from '../routes/projects'
 import Talks from '../routes/talks'
+
+import style from './app.css'
 // import Profile from '../routes/profile';
 // import Home from 'async!../routes/home';
 // import Profile from 'async!../routes/profile';
@@ -23,14 +25,18 @@ export default class App extends Component {
   render() {
     return (
       <div id="app">
-        <Header />
-        <Router id="router" onChange={ this.handleRoute }>
-          <Home path="/" />
-          <Projects path="/projects/" />
-          <Talks path="/talks/" />
-          <OldHome path="/oldHome/" />
-        </Router>
-        <Footer />
+        <div className={ style.container }>
+          <Header />
+          <div className={ style.content }>
+            <Router id="router" onChange={ this.handleRoute }>
+              <Home path="/" />
+              <Projects path="/projects/" />
+              <Talks path="/talks/" />
+              <OldHome path="/oldHome/" />
+            </Router>
+            <Footer />
+          </div>
+        </div>
       </div>
     )
   }
