@@ -1,7 +1,5 @@
-import { h, Component } from 'preact';
-import Talks from '../../components/talks';
-
-import style from './style';
+import { h, Component } from 'preact'
+import Talks from '../../components/talks'
 
 class TalksPage extends Component {
   // Note: `user` comes from the URL, courtesy of our router
@@ -10,8 +8,8 @@ class TalksPage extends Component {
       <div>
         <Talks />
       </div>
-    );
+    )
   }
 }
 
-export default TalksPage;
+export default TalksPage

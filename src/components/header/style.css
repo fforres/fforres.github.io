@@ -1,38 +1,36 @@
-.topBarWrapper {
-  position: fixed;
-  width: 100%;
-  min-width: 100%;
-  background-color: rgba(20, 20, 20, 0.6);
-  z-index: 3;
-}
-.topBarWrapper nav {
+.nav {
   display: flex;
-  align-items: center;
+  width: 100%;
   flex-direction: row;
   font-size: 1.3em;
   justify-content: space-around;
-  font-weight: 400;
 }
 
 .topBarLink {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: center;
   color: rgba(200, 200, 200, 1);
-  font-size: 1.3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
   transition: all 0.5s ease;
   text-decoration: none;
-  height: 100%;
-  display: flex;
-  align-items: center;
 }
-
 .topBarLink:hover,
 .topBarLink:active {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .topBarLink.active {
   background: rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 48em) {
+  .nav {
+    flex-direction: column;
+  }
+  .topBarLink {
+    width: 100%;
+  }
 }

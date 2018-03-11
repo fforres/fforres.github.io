@@ -1,16 +1,18 @@
 .talksArea {
-  padding-top: 7em;
   width: 100%;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
   padding-bottom: 4em;
+  padding-top: 6em;
 }
 
 .container {
   padding-top: 2rem;
-  width: 80vw;
+  max-width: 1024px;
+  padding-left: 2em;
+  padding-right: 2em;
   display: flex;
   flex-flow: row;
   justify-content: space-around;
@@ -23,29 +25,10 @@
 }*/
 .title {
   display: flex;
-  width: 75vw;
-  align-content: flex-start;
 }
 
-@media (max-width: 900px) {
-  .container {
-    flex-direction: column;
-  }
-}
-@media (max-width: 600px) {
-  .container {
-    width: 80vw;
-  }
-  .title {
-    width: 90vw;
-  }
-}
-
-@media (min-width: 1300px) {
-  .container {
-    width: 55vw;
-  }
-  .title {
-    width: 60vw;
+@media (min-width: 48em) {
+  .talksArea {
+    padding-top: 2em;
   }
 }
