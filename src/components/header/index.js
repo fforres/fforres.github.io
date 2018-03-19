@@ -30,6 +30,7 @@ export class TopBar extends Component {
       </Link>
     ))
   }
+ 
   render() {
     return (
       <div className={ layoutStyle.sidebar }>

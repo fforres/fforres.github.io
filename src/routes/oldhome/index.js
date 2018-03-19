@@ -1,15 +1,16 @@
 import { h, Component } from 'preact'
+import style from './style'
 import HomeHero from '../../components/homeHero'
 import HomeText from '../../components/homeText'
 import HomeResume from '../../components/homeResume'
-import style from './style.css'
 
 export default class Home extends Component {
   render() {
     return (
-      <div className={ style.container }>
+      <div>
         <HomeHero />
-        <HomeText /> <HomeResume />
+        <HomeText />
+        <HomeResume />
       </div>
     )
   }
