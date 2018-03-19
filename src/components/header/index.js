@@ -18,20 +18,22 @@ export class TopBar extends Component {
       link: '/projects'
     }
   ]
+
+  renderLinks = () => {
+    return TopBar.LinkArrays.map(({ title, link }) => (
+      <Link
+        activeClassName={ style.active }
+        className={ style.topBarLink }
+        href={ link }
+      >
+        { title }
+      </Link>
+    ))
+  }
   render() {
     return (
       <div className={ layoutStyle.sidebar }>
-        <nav className={ style.nav }>
-          { TopBar.LinkArrays.map(({ title, link }) => (
-            <Link
-              activeClassName={ style.active }
-              className={ style.topBarLink }
-              href={ link }
-            >
-              { title }
-            </Link>
-          )) }
-        </nav>
+        <nav className={ style.nav }>{ this.renderLinks() }</nav>
       </div>
     )
   }
