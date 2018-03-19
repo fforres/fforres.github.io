@@ -1,16 +1,19 @@
 html,
 body {
   width: 100%;
+  height: 100%;
   padding: 0;
   margin: 0;
   background: #fff;
-  font-family: "Helvetica Neue", arial, sans-serif;
+  font-family: 'Helvetica Neue', arial, sans-serif;
   font-weight: 400;
   color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+#app {
+  height: 100%;
+}
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
