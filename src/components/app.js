@@ -4,7 +4,6 @@ import { Router } from 'preact-router'
 import Header from './header'
 import Footer from './footer'
 import Home from '../routes/home'
-import OldHome from '../routes/oldhome'
 import Projects from '../routes/projects'
 import Talks from '../routes/talks'
 
@@ -32,7 +31,6 @@ export default class App extends Component {
               <Home path="/" />
               <Projects path="/projects/" />
               <Talks path="/talks/" />
-              <OldHome path="/oldHome/" />
             </Router>
             <Footer />
           </div>

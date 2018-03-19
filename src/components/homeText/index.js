@@ -1,14 +1,8 @@
-import { h, Component } from 'preact';
-import { Link } from 'preact-router/match';
-import style from './style.css';
+import { h, Component } from 'preact'
+import { Link } from 'preact-router/match'
+import style from './style.css'
 
 export class Landing extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      counter: 0
-    };
-  }
   render() {
     return (
       <div className={ style.textArea } id="hi">
@@ -57,7 +51,7 @@ export class Landing extends Component {
             >
               <span>Groupon</span>
             </a>
-            <span> but nowadays I work at </span>
+            <span> and </span>
             <a
               className={ style.link }
               href="https://axiomzen.co"
@@ -66,18 +60,26 @@ export class Landing extends Component {
             >
               <span> AxiomZen </span>
             </a>
-            <span>
-              making all sorts of cool and geek things using JS, with an amazing
-              group of people!
-            </span>
-            <span> (you can check them </span>
+            <span> but nowadays I work at </span>
             <a
               className={ style.link }
-              href="https://www.axiomzen.co/about#team"
+              href="https://segment.io"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <span>here</span>
+              <span> Segment </span>
+            </a>
+            <span>
+              making all sorts of cool and geek things using JS, with an amazing
+              group of people! (
+            </span>
+            <a
+              className={ style.link }
+              href="https://segment.com/team"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <span>you can check them here!</span>
             </a>
             <span>).</span>
           </p>
@@ -95,7 +97,7 @@ export class Landing extends Component {
             >
               <span>JSMeetups in Santiago</span>
             </a>
-            <span> , the </span>
+            <span>, the </span>
             <a
               className={ style.link }
               href="http://nodeschool.cl"
@@ -123,17 +125,16 @@ export class Landing extends Component {
 
           <p className={ style.paragraph }>
             <span>
-              On my free time I co-host a podcasts, I'm taking salsa lessons and
-              hike whenever I can, sometimes
+              On my free time I teach JS whenever I can, I'm learning LongBoard,
+              hike whenever I can, and sometimes post on
             </span>
-            <span> I post on </span>
             <a
               className={ style.link }
               href="https://twitter.com/fforres"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <span>twitter</span>
+              <span> twitter</span>
             </a>
             <span> and on </span>
             <a
@@ -142,7 +143,7 @@ export class Landing extends Component {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <span>facebook. </span>
+              <span>facebook.</span>
             </a>
           </p>
           <p className={ style.paragraph }>
@@ -171,11 +172,10 @@ export class Landing extends Component {
           </p>
           <p className={ style.paragraph }>
             <span>
-              If you have any questions, feedback or just want to say hi, (That
-              would be awesome) you can send me one of those electronic emails
+              If you have any questions, feedback or just want to say hi, you
+              can send me one of those electronic emails thingies
             </span>
             <span> at </span>
-
             <a
               className={ style.link }
               href="mailto:felipe.torressepulveda@gmail.com"
@@ -187,8 +187,8 @@ export class Landing extends Component {
           </p>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Landing;
+export default Landing

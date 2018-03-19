@@ -5,6 +5,7 @@
   padding-top: 4em;
   padding-bottom: 4em;
 }
+
 .paragraphsContainer {
   max-width: 75vw;
   color: rgb(45, 45, 45);
@@ -13,26 +14,22 @@
 }
 
 .paragraph {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1em;
 }
+
 .paragraph,
 .paragraph * {
-  line-height: 1.7em;
-  font-size: 0.91em;
+  line-height: 1.9em;
+  font-size: 0.9em;
 }
 
 .link {
   text-decoration: none;
+  word-break: break-word;
 }
-
-@media (max-width: 600px) {
+@media (min-width: 40em) {
   .paragraphsContainer {
-    max-width: 90vw;
-  }
-}
-
-@media (min-width: 1300px) {
-  .paragraphsContainer {
-    max-width: 55vw;
+    width: 60vw;
+    max-width: 40em;
   }
 }

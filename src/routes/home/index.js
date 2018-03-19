@@ -9,7 +9,8 @@ export default class Home extends Component {
     return (
       <div className={ style.container }>
         <HomeHero />
-        <HomeText /> <HomeResume />
+        <HomeText />
+        <HomeResume />
       </div>
     )
   }
