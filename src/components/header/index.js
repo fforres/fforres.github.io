@@ -1,5 +1,6 @@
 import { h, Component } from 'preact'
 import { Link } from 'preact-router/match'
+import classNames from 'classnames'
 import style from './style.css'
 import layoutStyle from '../app.css'
 
@@ -21,19 +22,15 @@ export class TopBar extends Component {
 
   renderLinks = () => {
     return TopBar.LinkArrays.map(({ title, link }) => (
-      <Link
-        activeClassName={ style.active }
-        className={ style.topBarLink }
-        href={ link }
-      >
+      <Link className={ style.topBarLink } href={ link }>
         { title }
       </Link>
     ))
   }
- 
+
   render() {
     return (
-      <div className={ layoutStyle.sidebar }>
+      <div className={ classNames(layoutStyle.sidebar, style.headerStyle) }>
         <nav className={ style.nav }>{ this.renderLinks() }</nav>
       </div>
     )
