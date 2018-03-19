@@ -14,7 +14,8 @@
   width: 100%;
   display: flex;
   align-items: center;
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 @media (max-width: 45em) {
   .sidebar {
@@ -38,14 +39,5 @@
   }
   .content {
     margin-left: 250px;
-  }
-}
-@media (min-width: 75em) {
-  .sidebar {
-    width: 300px;
-    background-color: transparent;
-  }
-  .content {
-    margin-left: 300px;
   }
 }
