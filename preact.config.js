@@ -7,7 +7,7 @@ const postCss = (config, helpers) => {
     throw Error('No config passed')
   }
   if (!helpers) {
-    throw Error('You helpers passed')
+    throw Error('You need to pass some helpers')
   }
   const postcssLoader = helpers.getLoadersByName(config, 'postcss-loader')
   postcssLoader.forEach(({ loader }) => delete loader.options)
