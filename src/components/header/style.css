@@ -17,13 +17,12 @@
   transition: all 0.5s ease;
   text-decoration: none;
 }
+.headerStyle {
+  background-color: #151f33;
+}
 .topBarLink:hover,
 .topBarLink:active {
   background: rgba(0, 0, 0, 0.7);
-}
-
-.topBarLink.active {
-  background: rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 45em) {
