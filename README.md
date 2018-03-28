@@ -2,7 +2,7 @@
 
 ## CLI Commands
 
-``` bash
+```bash
 # install dependencies
 npm install
 
@@ -17,3 +17,7 @@ npm run serve
 ```
 
 For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
+
+### Coolors pallet
+
+[Coolors pallet url](https://coolors.co/151f33-2b9720-ccdbdc-9ad1d4-80ced7)
