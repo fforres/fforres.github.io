@@ -36,7 +36,20 @@
 .salutation {
   text-shadow: 1px 1px #000;
   font-weight: bold;
-  font-size: 7vw;
+  font-size: calc(10vw);
   text-transform: uppercase;
   position: relative;
+}
+
+@media screen and (min-width: 75em) {
+  .salutation {
+    font-size: 84px;
+  }
+}
+
+@media (max-width: 45em) {
+  .title {
+    padding: 1em;
+    align-items: center;
+  }
 }
