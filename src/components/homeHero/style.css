@@ -40,3 +40,19 @@
   text-transform: uppercase;
   position: relative;
 }
+
+@media screen and (min-width: 67.5em) {
+  .salutation {
+    font-size: 71.68px;
+  }
+}
+
+@media (max-width: 45em) {
+  .title {
+    padding: 1em;
+    align-items: center;
+  }
+  .salutation {
+    font-size: 10vw;
+  }
+}
