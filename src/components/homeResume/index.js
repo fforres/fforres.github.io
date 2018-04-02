@@ -1,13 +1,13 @@
-import { h, Component } from 'preact';
-import Division from '../Division';
-import style from './style.css';
+import { h, Component } from 'preact'
+import Division from '../Division'
+import style from './style.css'
 
 export class Landing extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       counter: 0
-    };
+    }
   }
   render() {
     return (
@@ -25,11 +25,11 @@ export class Landing extends Component {
                 <span>
                   <a
                     className={ `${style.link} ${style.darkSlidingUnderline}` }
-                    href="https://axiomzen.co"
+                    href="https://segment.com"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    AxiomZen.
+                    Segment.
                   </a>
                 </span>
               </li>
@@ -40,7 +40,7 @@ export class Landing extends Component {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  I Give Talks.
+                  I give talks.
                 </a>
               </li>
               <li>
@@ -74,25 +74,22 @@ export class Landing extends Component {
                 >
                   JSMeetups
                 </a>
-                <span>, </span>
+                <span> and </span>
                 <a
                   className={ `${style.link} ${style.darkSlidingUnderline}` }
                   href="https://nodeschool.io/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  NodeSchool
+                  NodeSchool.
                 </a>
-                <span>, </span>
-                and Podcast.
               </li>
-              <li>I like dancing Salsa.</li>
             </ol>
           </p>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Landing;
+export default Landing
