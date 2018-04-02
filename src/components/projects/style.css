@@ -10,15 +10,12 @@
 }
 
 .container {
-  padding-top: 2rem;
-  max-width: 1024px;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 3rem;
+  max-width: 100%;
+  justify-content: center;
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 /*.paragraph {
