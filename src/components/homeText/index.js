@@ -125,8 +125,8 @@ export class Landing extends Component {
 
           <p className={ style.paragraph }>
             <span>
-              On my free time I teach JS, I'm learning how to Longboard, hike
-              whenever I can, and sometimes post on
+              On my free time I teach JS, I'm learning how to ride my Longboard,
+              hike whenever I can, and sometimes post on
             </span>
             <a
               className={ style.link }

@@ -36,7 +36,7 @@
 .salutation {
   text-shadow: 1px 1px #000;
   font-weight: bold;
-  font-size: calc(10vw);
+  font-size: 7vw;
   text-transform: uppercase;
   position: relative;
 }
