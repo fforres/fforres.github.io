@@ -1,105 +1,39 @@
 .project {
   position: relative;
-  width: 22em;
-  width: 336px;
-
-  padding-top: 1em;
-  padding-bottom: 1em;
-  min-width: 21em;
+  width: 16em;
+  height: 10em;
+  overflow: hidden;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  background-color: lightgray;
+  position: relative;
 }
 
-@media (max-width: 900px) {
+.cover {
+  position: absolute;
+  bottom: 0;
+  padding: 1em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.coverText {
+  color: lightgray;
+}
+
+@media (max-width: 64em) {
   .project {
+    width: 13em;
+    height: 7.64em;
   }
 }
 
-.activeInfo {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-content: flex-start;
-  text-align: left;
-  border-color: rgba(0, 0, 0, 0.3);
-  border-style: solid;
-  border-width: 1px;
-}
-
-.inactiveInfo {
-  overflow: hidden;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-
-  background-color: white;
-  background: solid;
-  position: absolute;
-  box-sizing: border-box;
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-right-color: rgba(0, 0, 0, 0.2);
-  border-bottom-width: 0;
-  border-bottom-style: solid;
-  border-bottom-color: rgba(0, 0, 0, 0.2);
-  border-left-style: solid;
-  border-left-width: 1px;
-  border-left-color: rgba(0, 0, 0, 0.2);
-  transition: all 200ms;
-  z-index: 1;
-  max-height: 0;
-}
-
-.inactiveInfoShow {
-  transition: all 1000ms;
-  max-height: 30em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  border-bottom-width: 1px;
-}
-
-/* HACK: It's not an ease-something animation, it animates padding faster than the "max-height" */
-.imageContainer {
-  background-size: cover;
-  background-position: center;
-  min-width: 40%;
-}
-
-.title {
-  font-size: 1.2rem;
-  padding-bottom: 0.5rem;
-}
-
-.textContainer {
-  height: 9em;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  padding: 0.6em;
-}
-
-.moreInfoContainer {
-  font-size: 0.9em;
-  background-color: transparent;
-  border: none;
-  border: none;
-  outline: none;
-  color: #0275d8;
-  text-align: right;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
-
-.moreInfoContainer:hover {
-  color: #58b2ff;
-  cursor: pointer;
-}
-
-.moreInfoContainer:active,
-.moreInfoContainer:focus {
-  background-color: transparent;
-  border: none;
-  border: none;
-  outline: none;
+@media (max-width: 45em) {
+  .project {
+    width: 10em;
+    height: 5.88em;
+  }
 }
