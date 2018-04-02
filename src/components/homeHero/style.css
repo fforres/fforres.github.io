@@ -41,9 +41,9 @@
   position: relative;
 }
 
-@media screen and (min-width: 75em) {
+@media screen and (min-width: 67.5em) {
   .salutation {
-    font-size: 84px;
+    font-size: 71.68px;
   }
 }
 
@@ -51,5 +51,8 @@
   .title {
     padding: 1em;
     align-items: center;
+  }
+  .salutation {
+    font-size: 10vw;
   }
 }
