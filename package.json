@@ -1,64 +1,7 @@
 {
-  "private": true,
-  "name": "fforres",
-  "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {
-    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "preact build",
-    "serve": "preact build && preact serve",
-    "dev": "preact watch",
-    "lint": "eslint src",
-    "precommit": "lint-staged -V -d",
-    "test": "jest ./tests"
-  },
-  "lint-staged": {
-    "*.{js,md}": [
-      "prettier --write",
-      "eslint --config .prod.eslintrc.js --fix",
-      "git add"
-    ],
-    "*.{json,css}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "standard"
-  },
-  "eslintIgnore": [
-    "build/*"
-  ],
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
-  },
-  "devDependencies": {
-    "eslint": "^4.9.0",
-    "eslint-config-standard": "^11.0.0-beta.0",
-    "eslint-config-standard-preact": "^1.1.6",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "husky": "^0.14.3",
-    "identity-obj-proxy": "^3.0.0",
-    "if-env": "^1.0.0",
-    "jest": "^22.4.2",
-    "lint-staged": "^7.0.0",
-    "preact-cli": "^2.1.0",
-    "preact-render-spy": "^1.2.1",
-    "prettier": "1.11.1"
-  },
   "dependencies": {
-    "classnames": "^2.2.5",
-    "eslint-config-prettier": "^2.9.0",
-    "postcss": "^6.0.19",
-    "postcss-cssnext": "^3.1.0",
-    "postcss-import": "^11.1.0",
-    "postcss-url": "^7.3.1",
-    "preact": "^8.2.6",
-    "preact-compat": "^3.17.0",
-    "preact-router": "^2.5.7"
+    "next": "^7.0.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
   }
 }
