@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
 
 interface ISocialButtons {
-  icons: String;
+  icons: String
 }
 
 class SocialButton extends Component<ISocialButtons, any> {
@@ -14,8 +14,8 @@ class SocialButton extends Component<ISocialButtons, any> {
           }
         `}</style>
       </a>
-    );
+    )
   }
 }
 
-export default SocialButton;
+export default SocialButton
