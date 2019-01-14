@@ -6,8 +6,15 @@ interface ISocialButtons {
 
 class SocialButton extends Component<ISocialButtons, any> {
   render() {
-    console.log(this.props.icons);
-    return <div>s</div>;
+    return (
+      <a>
+        s
+        <style jsx>{`
+          a {
+          }
+        `}</style>
+      </a>
+    );
   }
 }
 
