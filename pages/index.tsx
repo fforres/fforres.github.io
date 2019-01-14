@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Home extends Component {
   render() {
-    return <div>1as dasd31231</div>;
+    return <div>1as das dasd ad s asd ads ads 312aa sdasd 31</div>;
   }
 }
 
