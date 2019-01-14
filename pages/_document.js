@@ -19,7 +19,7 @@ export default class MyDocument extends Document {
           {`
             html { box-sizing: border-box; }
             *, *:before, *:after { box-sizing: inherit; }
-            body, html { margin: 0; padding: 0; } /* custom! */
+            body, html, #__next { margin: 0; padding: 0; height: 100% } /* custom! */
           `}
           </style>
         </Head>
