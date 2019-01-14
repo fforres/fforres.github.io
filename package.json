@@ -24,7 +24,11 @@
     "typescript": "^3.2.2"
   },
   "lint-staged": {
-    "*.{ts,tsx}": ["tslint -c ./tslint.json --exclude **/*.d.ts --fix", "prettier --write", "git add"]
+    "*.{ts,tsx}": [
+      "tslint -c ./tslint.json --exclude **/*.d.ts --fix",
+      "prettier --write",
+      "git add"
+    ]
   },
   "husky": {
     "hooks": {
