@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
 
-import { backgroundColor, textColorDarkBackground } from '../style/colors'
-import Icon from '../Icon'
+import {
+  backgroundColor,
+  textColorDarkBackground,
+  darkerBackgroundColor
+} from '../style/colors'
+import SocialLink from '../SocialLink'
 
 class Sidebar extends Component<any, any> {
   render() {
@@ -21,31 +25,14 @@ class Sidebar extends Component<any, any> {
           </Link>
         </div>
         <div className="social-buttons-container">
-          <Link href="http://twitter.com/fforres">
-            <a>
-              <Icon iconName="Twitter" />
-            </a>
-          </Link>
-          <Link href="http://facebook.com/fforres">
-            <a>
-              <Icon iconName="Facebook" />
-            </a>
-          </Link>
-          <Link href="http://flickr.com/fforres">
-            <a>
-              <Icon iconName="Flicker" />
-            </a>
-          </Link>
-          <Link href="http://github.com/fforres">
-            <a>
-              <Icon iconName="Github" />
-            </a>
-          </Link>
-          <Link href="https://www.linkedin.com/in/fforres">
-            <a>
-              <Icon iconName="Linkedin" />
-            </a>
-          </Link>
+          <SocialLink href="http://twitter.com/fforres" iconName="Twitter" />
+          <SocialLink href="http://facebook.com/fforres" iconName="Facebook" />
+          <SocialLink href="http://flickr.com/fforres" iconName="Flicker" />
+          <SocialLink href="http://github.com/fforres" iconName="Github" />
+          <SocialLink
+            href="https://www.linkedin.com/in/fforres"
+            iconName="Linkedin"
+          />
         </div>
         <style jsx>{`
           nav {
@@ -65,6 +52,10 @@ class Sidebar extends Component<any, any> {
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: background-color 150ms;
+          }
+          nav .links-container a:hover {
+            background-color: ${darkerBackgroundColor};
           }
           nav .social-buttons-container {
             display: flex;
@@ -72,13 +63,6 @@ class Sidebar extends Component<any, any> {
             flex-direction: row;
             justify-content: center;
             width: 100%;
-          }
-          nav .social-buttons-container a {
-            text-decoration: none;
-            padding: 0.5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
           }
         `}</style>
       </nav>

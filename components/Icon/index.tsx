@@ -5,7 +5,7 @@ import LinkedinSvg from './linkedin'
 import GithubSvg from './github'
 import FlickrSvg from './flickr'
 
-interface Iicon {
+export interface Iicon {
   iconName: 'Twitter' | 'Facebook' | 'Linkedin' | 'Email' | 'Github' | 'Flicker'
 }
 
