@@ -8,7 +8,7 @@ class SocialButton extends Component<ISocialButtons, any> {
   render() {
     return (
       <a>
-        s
+        socialButton
         <style jsx>{`
           a {
           }
