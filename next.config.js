@@ -10,5 +10,10 @@ module.exports = withTypescript({
       ]
     }
     return config;
+  },
+  exportPathMap: function () {
+    return {
+      '/': { page: '/' }
+    }
   }
 })
