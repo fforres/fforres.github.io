@@ -12,7 +12,7 @@ class Home extends Component {
   render() {
     return (
       <nav className="topBar">
-        <Link href="/home">
+        <Link href="/">
           <a>Home</a>
         </Link>
         <Link href="/talks">
