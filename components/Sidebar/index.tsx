@@ -39,7 +39,7 @@ class Sidebar extends Component<any, any> {
         <style jsx>{`
           nav {
             height: 100%;
-            width: 11rem;
+            width: 9rem;
             background-color: ${backgroundColor};
             display: flex;
             flex-direction: column;

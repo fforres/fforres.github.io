@@ -1,3 +1,3 @@
-export const tabletMin = 767
+export const tabletMin = 768
 
-export const tabletMax = 768
+export const tabletMax = 767
