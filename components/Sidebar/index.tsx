@@ -4,9 +4,11 @@ import Link from 'next/link'
 import {
   backgroundColor,
   textColorDarkBackground,
-  darkerBackgroundColor
+  darkerBackgroundColor,
+  lighterTextColorDarkBackground
 } from '../style/colors'
 import SocialLink from '../SocialLink'
+import { tabletMax } from '../style/breakpoints'
 
 class Sidebar extends Component<any, any> {
   render() {
@@ -52,10 +54,11 @@ class Sidebar extends Component<any, any> {
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: background-color 150ms;
+            transition: background-color 150ms ease, color 200ms ease;
           }
           nav .links-container a:hover {
             background-color: ${darkerBackgroundColor};
+            color: ${lighterTextColorDarkBackground};
           }
           nav .social-buttons-container {
             display: flex;
@@ -63,6 +66,11 @@ class Sidebar extends Component<any, any> {
             flex-direction: row;
             justify-content: center;
             width: 100%;
+          }
+          @media (max-width: ${tabletMax}px) {
+            nav {
+              display: none;
+            }
           }
         `}</style>
       </nav>

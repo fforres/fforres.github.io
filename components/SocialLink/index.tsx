@@ -30,7 +30,7 @@ class SocialLink extends Component<ISocialLink, any> {
           }
           a :global(path) {
             fill: ${textColorDarkBackground};
-            transition: fill 35ms;
+            transition: fill 200ms;
           }
           a:hover :global(path) {
             fill: ${lighterTextColorDarkBackground};
