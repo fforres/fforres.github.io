@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import Hero from '../components/Hero'
 import LongResume from '../components/LongResume'
 import SmallResume from '../components/SmallResume'
+import Hr from '../components/Hr'
 
 class Home extends Component {
   render() {
@@ -11,9 +12,9 @@ class Home extends Component {
         <div className="contentWrapper">
           <div className="container">
             <LongResume />
-            <hr className="hr" />
+            <Hr />
             <SmallResume />
-            <hr className="hr" />
+            <Hr />
           </div>
         </div>
         <style jsx>{`
@@ -29,11 +30,6 @@ class Home extends Component {
             max-width: 46rem;
             padding-left: 3rem;
             padding-right: 3rem;
-          }
-          .hr {
-            width: 75%;
-            margin-top: 3rem;
-            margin-bottom: 3rem;
           }
         `}</style>
       </Fragment>

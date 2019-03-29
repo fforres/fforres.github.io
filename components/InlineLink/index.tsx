@@ -1,13 +1,23 @@
-import React, { Component, Fragment } from 'react'
-import Link from 'next/link'
+import React, { Component, Fragment, AnchorHTMLAttributes } from 'react'
+import Link, { LinkProps } from 'next/link'
 import { textLinkColor, lighterTextLinkColor } from '../style/colors'
-class InlineLink extends Component {
+
+interface InlineLink extends LinkProps {
+  rel?: string
+  target?: string
+}
+
+class InlineLink extends Component<InlineLink> {
   render() {
-    const { children, ...rest } = this.props
+    const { children, rel, target, ...rest } = this.props
+    const relProps = rel ? { rel } : {}
+    const targetProps = target ? { target } : {}
     return (
       <Fragment>
         <Link {...rest}>
-          <a>{children}</a>
+          <a {...relProps} {...targetProps}>
+            {children}
+          </a>
         </Link>
         <style jsx>{`
           a {
