@@ -3,10 +3,7 @@
 
 // ./pages/_document.js
 import Document, { Head, Main, NextScript } from 'next/document'
-import {
-  textColorDarkBackground,
-  textColorLightBackground
-} from '../components/style/colors'
+import { textColorLightBackground } from '../components/style/colors'
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: any) {
@@ -36,7 +33,10 @@ export default class MyDocument extends Document {
                 font-family: Lato, sans-serif;
                 font-weight: 400;
               }
-              p {
+              p,
+              li,
+              ul,
+              ol {
                 font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto,
                   Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
                   Helvetica Neue, Helvetica, Arial, sans-serif;

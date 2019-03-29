@@ -1,6 +1,6 @@
-### I'm *fforres*
+### 👋, I'm fforres
 
-(people also know me as **Felipe Torres**)
+(people also know me as **Felipe**)
 
 I'm a [software engineer](https://github.com/fforres) by choice, an educator at heart ❤️. I'm very passionate about software communities. A [Chilean](https://www.nomadasaurus.com/photos-of-chile/) living in SFO.
 
@@ -14,5 +14,4 @@ On my free time I usually teach JS, I'm learning how to ride my Longboard, hike 
 
 I've worked at various startups and with very interesting people, you can read more on my [linkedin profile](https://cl.linkedin.com/in/fforres) or by looking [onto my cv](https://docs.google.com/document/d/1zyPmrxMJmP61lOdVBh3kbQ8h_U56103bvQMx8NcJFlU/edit?usp=sharing).
 
-If you have any questions, feedback or just want to say hi, you can send me one of those electronic emails thingies at [felipe.torressepulveda@gmail.com](mailto:felipe.torressepulveda@gmail.com?subject=👋).
-
+If you have any questions, feedback or just want to say hi, you can send me one of those [electronic emails](mailto:felipe.torressepulveda@gmail.com?subject=👋).

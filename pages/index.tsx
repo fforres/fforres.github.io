@@ -11,13 +11,14 @@ class Home extends Component {
         <div className="contentWrapper">
           <div className="container">
             <LongResume />
+            <hr className="hr" />
             <SmallResume />
+            <hr className="hr" />
           </div>
         </div>
         <style jsx>{`
           .contentWrapper {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
+            padding-top: 4rem;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -28,6 +29,11 @@ class Home extends Component {
             max-width: 46rem;
             padding-left: 3rem;
             padding-right: 3rem;
+          }
+          .hr {
+            width: 75%;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
           }
         `}</style>
       </Fragment>

@@ -4,14 +4,20 @@ import Link from 'next/link'
 import Icon, { Iicon } from '../Icon'
 import {
   textColorDarkBackground,
-  lighterTextColorDarkBackground
+  lighterTextColorDarkBackground,
+  darkerTextColorDarkBackground
 } from '../style/colors'
 
 interface ISocialLink extends Iicon {
   href: string
+  background: 'light' | 'dark'
 }
 
 class SocialLink extends Component<ISocialLink, any> {
+  static defaultProps: {
+    background: 'dark'
+  }
+
   render() {
     return (
       <Fragment>
@@ -33,7 +39,9 @@ class SocialLink extends Component<ISocialLink, any> {
             transition: fill 200ms;
           }
           a:hover :global(path) {
-            fill: ${lighterTextColorDarkBackground};
+            fill: ${this.props.background === 'light'
+              ? lighterTextColorDarkBackground
+              : darkerTextColorDarkBackground};
           }
         `}</style>
       </Fragment>

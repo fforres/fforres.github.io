@@ -2,6 +2,7 @@ import React from 'react'
 import App, { Container } from 'next/app'
 import Sidebar from '../components/Sidebar'
 import TopBar from '../components/TopBar'
+import Footer from '../components/Footer'
 import { tabletMax } from '../components/style/breakpoints'
 
 class MyApp extends App {
@@ -29,6 +30,7 @@ class MyApp extends App {
           <TopBar />
           <div className="pageContainer">
             <Component {...pageProps} />
+            <Footer />
           </div>
           <style jsx>{`
             .root {
