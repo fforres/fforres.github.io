@@ -38,6 +38,8 @@ class MyApp extends App {
             }
             .pageContainer {
               width: 100%;
+              height: 100%;
+              overflow-y: scroll;
             }
             @media (max-width: ${tabletMax}px) {
               .root {
