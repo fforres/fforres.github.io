@@ -15,6 +15,7 @@
     "sourceMap": true,
     "strict": true,
     "target": "esnext",
+    "resolveJsonModule": true,
     "typeRoots": [ 
       "node_modules/@types",
       "./typings"

@@ -2,11 +2,6 @@ import React, { Component, Fragment } from 'react'
 import { lighterTextColorDarkBackground, blackColor } from '../style/colors'
 import { tabletMax } from '../style/breakpoints'
 
-{
-  /* <source srcSet="static/fforres.webp" type="image/webp" />
-            <source srcSet="static/fforres.jpeg" type="image/jpeg" />
-             */
-}
 class Hero extends Component {
   render() {
     return (

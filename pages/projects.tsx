@@ -1,9 +1,43 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component, Fragment } from 'react'
+import projectsData from '../components/Project/data.json'
+import Project from '../components/Project'
+import Hr from '../components/Hr'
 
 class Projects extends Component {
   render() {
-    return <div>Projects</div>
+    return (
+      <Fragment>
+        <section className="container">
+          <div>
+            <h1>Projects</h1>
+          </div>
+          <div className="projectsContainer">
+            {projectsData.map((el: any, i: number) => (
+              <Project key={i} project={el} />
+            ))}
+          </div>
+        </section>
+        <style jsx>{`
+          h1 {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+          }
+          .projectsContainer {
+            display: flex;
+            margin-bottom: 3rem;
+            justify-content: center;
+            flex-wrap: wrap;
+          }
+          .container {
+            width: 100%;
+            max-width: 46rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+          }
+        `}</style>
+      </Fragment>
+    )
   }
 }
 

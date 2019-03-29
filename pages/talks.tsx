@@ -12,11 +12,17 @@ class Talks extends Component {
             <h1>Talks & presentations</h1>
           </div>
 
-          {talksData.map((el, i) => (
+          {talksData.map((el: any, i: number) => (
             <Talk key={i} talk={el} />
           ))}
         </section>
         <style jsx>{`
+          h1 {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+          }
+
           .container {
             width: 100%;
             max-width: 46rem;
