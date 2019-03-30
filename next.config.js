@@ -23,7 +23,9 @@ module.exports = withTypescript({
   },
   exportPathMap: function () {
     return {
-      '/': { page: '/' }
+      '/': { page: '/' },
+      '/projects': { page: '/projects' },
+      '/talks': { page: '/talks' }
     }
   },
   target: 'serverless'
