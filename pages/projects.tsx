@@ -24,6 +24,8 @@ class Projects extends Component {
             text-align: center;
           }
           .projectsContainer {
+            max-width: 1100px;
+            width: 100%;
             display: flex;
             margin-bottom: 3rem;
             justify-content: center;
@@ -31,7 +33,9 @@ class Projects extends Component {
           }
           .container {
             width: 100%;
-            max-width: 46rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             padding-left: 3rem;
             padding-right: 3rem;
           }

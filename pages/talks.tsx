@@ -12,9 +12,11 @@ class Talks extends Component {
             <h1>Talks & presentations</h1>
           </div>
 
-          {talksData.map((el: any, i: number) => (
-            <Talk key={i} talk={el} />
-          ))}
+          <div className="talkContainer">
+            {talksData.map((el: any, i: number) => (
+              <Talk key={i} talk={el} />
+            ))}
+          </div>
         </section>
         <style jsx>{`
           h1 {
@@ -23,9 +25,19 @@ class Talks extends Component {
             text-align: center;
           }
 
+          .talkContainer {
+            max-width: 1100px;
+            width: 100%;
+            display: flex;
+            margin-bottom: 3rem;
+            justify-content: center;
+            flex-wrap: wrap;
+          }
           .container {
             width: 100%;
-            max-width: 46rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             padding-left: 3rem;
             padding-right: 3rem;
           }

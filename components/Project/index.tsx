@@ -29,6 +29,7 @@ class Project extends Component<any> {
         </a>
         <style jsx>{`
           .project {
+            max-width: 20rem;
             margin: 0.5rem;
             position: relative;
             width: 50%;
