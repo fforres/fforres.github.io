@@ -20,7 +20,7 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:300,300i,700"
             rel="stylesheet"
           />
-          <style jsx global>
+          <style>
             {`
               html {
                 box-sizing: border-box;
