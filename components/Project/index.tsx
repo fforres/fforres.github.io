@@ -73,8 +73,8 @@ class Project extends Component<any> {
           }
           .picture {
             position: absolute;
-            background-image: url('static/${img}.jpeg');
-            background-image: url('static/${img}.webp');
+            background-image: url('/static/${img}.jpeg');
+            background-image: url('/static/${img}.webp');
             width: 100%;
             height: 100%;
             background-repeat: no-repeat;
