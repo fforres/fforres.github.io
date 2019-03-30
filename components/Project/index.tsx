@@ -29,6 +29,7 @@ class Project extends Component<any> {
         </a>
         <style jsx>{`
           .project {
+            max-width: 20rem;
             margin: 0.5rem;
             position: relative;
             width: 50%;
@@ -73,8 +74,8 @@ class Project extends Component<any> {
           }
           .picture {
             position: absolute;
-            background-image: url('static/${img}.jpeg');
-            background-image: url('static/${img}.webp');
+            background-image: url('/static/${img}.jpeg');
+            background-image: url('/static/${img}.webp');
             width: 100%;
             height: 100%;
             background-repeat: no-repeat;
