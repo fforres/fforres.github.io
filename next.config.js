@@ -1,32 +1,27 @@
-const withTypescript = require('@zeit/next-typescript')
+const withTypescript = require("@zeit/next-typescript");
 
 module.exports = withTypescript({
   webpackDevMiddleware(config) {
     config.watchOptions = {
-      ignored: [
-        /\.git\//,
-        /\.next\//,
-        /node_modules/
-      ]
-    }
+      ignored: [/\.git\//, /\.next\//, /node_modules/]
+    };
     return config;
   },
-  webpack: (config) => {
-    config.module.rules.push(
-      {
-        test: /\.md$/,
-        use: 'raw-loader'
-      }
-    )
+  webpack: config => {
+    config.module.rules.push({
+      test: /\.md$/,
+      use: "raw-loader"
+    });
 
-    return config
+    return config;
   },
-  exportPathMap: function () {
+  exportTrailingSlash: true,
+  exportPathMap: function() {
     return {
-      '/': { page: '/' },
-      '/projects': { page: '/projects' },
-      '/talks': { page: '/talks' }
-    }
+      "/": { page: "/" },
+      "/projects": { page: "/projects" },
+      "/talks": { page: "/talks" }
+    };
   },
-  target: 'serverless'
-})
+  target: "serverless"
+});
