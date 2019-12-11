@@ -13,7 +13,7 @@ class Project extends Component<any> {
 
   render() {
     const { project } = this.props
-    const { img, link, title, alt } = project
+    const { img, link, title } = project
     return (
       <Fragment>
         <a

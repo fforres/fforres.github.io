@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import markdown from './small.md'
 import Markdown from '../Markdown'
 
