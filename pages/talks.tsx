@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import talksData from '../components/Talk/data.json'
 import Talk from '../components/Talk'
-import Hr from '../components/Hr'
 
 class Talks extends Component {
   render() {

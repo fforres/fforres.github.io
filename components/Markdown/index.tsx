@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import unified from 'unified'
 import remarkParse from 'remark-parse'
 import remarkHtml from 'remark-html'
-import Interweave, { Matcher } from 'interweave'
+import Interweave from 'interweave'
 import InlineLink from '../InlineLink'
 
 const getAttributes = (attrs: NamedNodeMap): any => {
@@ -14,32 +14,6 @@ const getAttributes = (attrs: NamedNodeMap): any => {
   }
   return attributes
 }
-
-// class LinkFilter extends Filter {
-//   node(name: string, node: HTMLElement): HTMLElement {
-//     const attributes = getAttributes(node.attributes)
-//     if (name === 'a') {
-//       return <InlineLink {...attributes} />
-//     }
-
-//     return node;
-//   }
-// }
-
-// class CustomMatcher extends Matcher<any> {
-//   match(string: string): MatchResponse | null {
-//     return match(string);
-//   }
-
-//   replaceWith(match: string, props: any): Node {
-//     return <span {...props}>{match}</span>;
-//   }
-
-//   asTag(): string {
-//     return 'span';
-//   }
-// }
-
 class Markdown extends Component<{
   rawMarkdown: string
 }> {
@@ -56,7 +30,10 @@ class Markdown extends Component<{
     if (node.tagName === 'A') {
       return (
         <InlineLink {...attributes}>
-          <Interweave transform={this.transform} content={node.innerHTML} />
+          <Interweave
+            transform={this.transform as any}
+            content={node.innerHTML}
+          />
         </InlineLink>
       )
     }
@@ -69,7 +46,9 @@ class Markdown extends Component<{
       .processSync(this.props.rawMarkdown)
     const content = contents.toString()
     this.setState({
-      content: <Interweave transform={this.transform} content={content} />
+      content: (
+        <Interweave transform={this.transform as any} content={content} />
+      )
     })
   }
 

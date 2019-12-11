@@ -10,7 +10,7 @@ class Talk extends Component<any> {
           <div className="title">
             <h2>
               <InlineLink
-                href={this.props.talk.organizacion.link}
+                href={this.props.talk.organizacion.link as string}
                 rel="noopener noreferrer"
                 target="_blank"
               >

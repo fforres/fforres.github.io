@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { textColorDarkBackground } from '../style/colors'
 
 class TwitterSvg extends Component {
   render() {

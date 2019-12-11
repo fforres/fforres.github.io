@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import projectsData from '../components/Project/data.json'
 import Project from '../components/Project'
-import Hr from '../components/Hr'
 
 class Projects extends Component {
   render() {
