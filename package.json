@@ -14,10 +14,7 @@
   },
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "now-build": "next build",
-    "start": "next start",
-    "export": "next export",
+    "build": "next export",
     "precommit": "lint-staged"
   },
   "devDependencies": {
