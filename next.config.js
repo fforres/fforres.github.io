@@ -1,10 +1,7 @@
-const withTypescript = require("@zeit/next-typescript");
-
-module.exports = withTypescript({
+module.exports = {
   webpackDevMiddleware(config) {
-    config.watchOptions = {
-      ignored: [/\.git\//, /\.next\//, /node_modules/]
-    };
+    // Perform customizations to webpack dev middleware config
+    // Important: return the modified config
     return config;
   },
   webpack: config => {
@@ -24,4 +21,4 @@ module.exports = withTypescript({
     };
   },
   target: "serverless"
-});
+};
