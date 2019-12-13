@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from 'react'
-import { lighterTextColorDarkBackground, blackColor } from '../style/colors'
-import { tabletMax } from '../style/breakpoints'
+import React, { Component, Fragment } from "react";
+import { lighterTextColorDarkBackground, blackColor } from "../style/colors";
+import { tabletMax } from "../style/breakpoints";
 
 class Hero extends Component {
   render() {
@@ -20,8 +20,8 @@ class Hero extends Component {
           }
           .backgroundImage {
             position: absolute;
-            background-image: url('/static/fforres.jpeg');
-            background-image: url('/static/fforres.webp');
+            background-image: url("/static/fforres.jpeg");
+            background-image: url("/static/fforres.webp");
             width: 100%;
             height: 100%;
             filter: blur(1px);
@@ -48,8 +48,8 @@ class Hero extends Component {
           }
         `}</style>
       </Fragment>
-    )
+    );
   }
 }
 
-export default Hero
+export default Hero;

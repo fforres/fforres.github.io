@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import { tabletMin } from '../style/breakpoints'
-import Link from 'next/link'
+import React, { Component } from "react";
+import { tabletMin } from "../style/breakpoints";
+import Link from "next/link";
 import {
   backgroundColor,
   textColorDarkBackground,
   lighterTextColorDarkBackground
-} from '../style/colors'
+} from "../style/colors";
 
 class Home extends Component {
   render() {
@@ -52,8 +52,8 @@ class Home extends Component {
           }
         `}</style>
       </nav>
-    )
+    );
   }
 }
 
-export default Home
+export default Home;

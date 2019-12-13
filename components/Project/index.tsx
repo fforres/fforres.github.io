@@ -1,33 +1,56 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment, useRef } from "react";
+import { motion, useMotionValue } from "framer-motion";
+import { openSpring, closeSpring } from "./animations";
 
-class Project extends Component<any> {
-  state = {
-    shown: false
-  }
-
-  showMoreInfo = () => {
-    this.setState({
-      shown: !this.state.shown
-    })
-  }
-
-  render() {
-    const { project } = this.props
-    const { img, link, title } = project
-    return (
-      <Fragment>
-        <a
-          className="project"
-          href={link}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <div className="picture" />
-          <div className="cover">
-            <span className="coverText">{title}</span>
-          </div>
-        </a>
-        <style jsx>{`
+const Project: React.FC<any> = ({ project, isSelected, onClick }) => {
+  const { img, link, title } = project;
+  const cardRef = useRef(null);
+  const zIndex = useMotionValue(isSelected ? 2 : 0);
+  const y = useMotionValue(0);
+  return (
+    <Fragment>
+      <div className="project" onClick={onClick}>
+        <div className={`project-container ${isSelected && "open"}`}>
+          <motion.div
+            ref={cardRef}
+            className="card-content"
+            style={{ zIndex, y }}
+            layoutTransition={isSelected ? openSpring : closeSpring}
+            // drag={isSelected ? "y" : false}
+            // dragConstraints={constraints}
+            // onDrag={checkSwipeToDismiss}
+            // onUpdate={checkZIndex}
+          >
+            <div className="picture" />
+            <a
+              className="cover"
+              href={link}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <span className="coverText">{title}</span>
+            </a>
+          </motion.div>
+        </div>
+      </div>
+      <style jsx>{`
+          .project-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: block;
+            pointer-events: none;
+          }
+          .project-container.open {
+            top: 0;
+            left: 0;
+            right: 0;
+            position: fixed;
+            z-index: 1;
+            overflow: hidden;
+            padding: 40px;
+          }
+          
           .project {
             max-width: 20rem;
             margin: 0.5rem;
@@ -40,7 +63,23 @@ class Project extends Component<any> {
             border-width: 1px;
             border-radius: 2px;
             box-shadow: 0 2px 4px 2px rgba(0,0,0,0.1);
+          }
+          
+          .card-content {
+            pointer-events: auto;
+            position: relative;
+            border-radius: 20px;
+            background: #1c1c1e;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+          }
 
+          .open .card-content {
+            height: auto;
+            max-width: 700px;
+            overflow: hidden;
           }
 
           .cover {
@@ -83,9 +122,8 @@ class Project extends Component<any> {
             background-position: 50%;
           }
         `}</style>
-      </Fragment>
-    )
-  }
-}
+    </Fragment>
+  );
+};
 
-export default Project
+export default Project;
