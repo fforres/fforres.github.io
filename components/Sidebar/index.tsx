@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
-import Link from 'next/link'
+import React, { Component } from "react";
+import Link from "next/link";
 
 import {
   backgroundColor,
   textColorDarkBackground,
   darkerBackgroundColor,
   lighterTextColorDarkBackground
-} from '../style/colors'
-import SocialLink from '../SocialLink'
-import { tabletMax } from '../style/breakpoints'
+} from "../style/colors";
+import SocialLink from "../SocialLink";
+import { tabletMax } from "../style/breakpoints";
 
 class Sidebar extends Component<any, any> {
   render() {
@@ -74,8 +74,8 @@ class Sidebar extends Component<any, any> {
           }
         `}</style>
       </nav>
-    )
+    );
   }
 }
 
-export default Sidebar
+export default Sidebar;

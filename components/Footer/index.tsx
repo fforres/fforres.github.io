@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react'
-import SocialLink from '../SocialLink'
+import React, { Component, Fragment } from "react";
+import SocialLink from "../SocialLink";
 
 class Footer extends Component {
   render() {
@@ -28,8 +28,8 @@ class Footer extends Component {
           }
         `}</style>
       </Fragment>
-    )
+    );
   }
 }
 
-export default Footer
+export default Footer;

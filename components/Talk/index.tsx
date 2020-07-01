@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from 'react'
-import InlineLink from '../InlineLink'
-import Hr from '../Hr'
+import React, { Component, Fragment } from "react";
+import InlineLink from "../InlineLink";
+import Hr from "../Hr";
 
 class Talk extends Component<any> {
   render() {
@@ -91,8 +91,8 @@ class Talk extends Component<any> {
           }
         `}</style>
       </Fragment>
-    )
+    );
   }
 }
 
-export default Talk
+export default Talk;

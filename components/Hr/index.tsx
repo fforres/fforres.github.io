@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment } from "react";
 
 class Hr extends Component {
   render() {
@@ -13,8 +13,8 @@ class Hr extends Component {
           }
         `}</style>
       </Fragment>
-    )
+    );
   }
 }
 
-export default Hr
+export default Hr;
