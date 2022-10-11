@@ -2,7 +2,7 @@ import type { DocumentProps } from "next/document";
 import { Head, Html, Main, NextScript } from "next/document";
 import React from "react";
 import { textColorLightBackground } from "../components/style/colors";
-export default function Document({ css }: DocumentProps & { css: any }) {
+export default function Document({ css }: DocumentProps & { css: string }) {
   return (
     <Html>
       <Head>

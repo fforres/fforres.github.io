@@ -12,7 +12,7 @@ class Talks extends Component {
           </div>
 
           <div className="talkContainer">
-            {talksData.map((el: any, i: number) => <Talk key={i} talk={el} />)}
+            {talksData.map((el, i: number) => <Talk key={i} talk={el} />)}
           </div>
         </section>
         <style jsx>

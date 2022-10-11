@@ -11,7 +11,7 @@ class Projects extends Component {
             <h1>Projects</h1>
           </div>
           <div className="projectsContainer">
-            {projectsData.map((el: any, i: number) => <Project key={i} project={el} />)}
+            {projectsData.map((el, i: number) => <Project key={i} project={el} />)}
           </div>
         </section>
         <style jsx>

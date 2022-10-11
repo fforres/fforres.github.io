@@ -5,7 +5,7 @@ import remarkParse from "remark-parse";
 import unified from "unified";
 import InlineLink from "../InlineLink";
 
-const getAttributes = (attrs: NamedNodeMap): any => {
+const getAttributes = (attrs: NamedNodeMap) => {
   const attributes: Record<string, string> = {};
   if (attrs) {
     for (const item of Array.from(attrs)) {
