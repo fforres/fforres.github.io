@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from 'react'
-import projectsData from '../components/Project/data.json'
-import Project from '../components/Project'
+import React, { Component, Fragment } from "react";
+import Project from "../components/Project";
+import projectsData from "../components/Project/data.json";
 
 class Projects extends Component {
   render() {
@@ -11,12 +11,11 @@ class Projects extends Component {
             <h1>Projects</h1>
           </div>
           <div className="projectsContainer">
-            {projectsData.map((el: any, i: number) => (
-              <Project key={i} project={el} />
-            ))}
+            {projectsData.map((el: any, i: number) => <Project key={i} project={el} />)}
           </div>
         </section>
-        <style jsx>{`
+        <style jsx>
+          {`
           h1 {
             margin-top: 2rem;
             margin-bottom: 3rem;
@@ -38,10 +37,11 @@ class Projects extends Component {
             padding-left: 3rem;
             padding-right: 3rem;
           }
-        `}</style>
+        `}
+        </style>
       </Fragment>
-    )
+    );
   }
 }
 
-export default Projects
+export default Projects;

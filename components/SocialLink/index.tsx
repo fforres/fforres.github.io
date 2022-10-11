@@ -1,22 +1,22 @@
-import React, { Component, Fragment } from 'react'
-import Link from 'next/link'
+import Link from "next/link";
+import React, { Component, Fragment } from "react";
 
-import Icon, { Iicon } from '../Icon'
+import Icon, { Iicon } from "../Icon";
 import {
-  textColorDarkBackground,
+  darkerTextColorDarkBackground,
   lighterTextColorDarkBackground,
-  darkerTextColorDarkBackground
-} from '../style/colors'
+  textColorDarkBackground,
+} from "../style/colors";
 
 interface ISocialLink extends Iicon {
-  href: string
-  background: 'light' | 'dark'
+  href: string;
+  background: "light" | "dark";
 }
 
 class SocialLink extends Component<ISocialLink, any> {
   static defaultProps: {
-    background: 'dark'
-  }
+    background: "dark";
+  };
 
   render() {
     return (
@@ -26,7 +26,8 @@ class SocialLink extends Component<ISocialLink, any> {
             <Icon iconName={this.props.iconName} />
           </a>
         </Link>
-        <style jsx>{`
+        <style jsx>
+          {`
           a {
             text-decoration: none;
             padding: 0.5rem;
@@ -39,14 +40,17 @@ class SocialLink extends Component<ISocialLink, any> {
             transition: fill 200ms;
           }
           a:hover :global(path) {
-            fill: ${this.props.background === 'light'
+            fill: ${
+            this.props.background === "light"
               ? lighterTextColorDarkBackground
-              : darkerTextColorDarkBackground};
+              : darkerTextColorDarkBackground
+          };
           }
-        `}</style>
+        `}
+        </style>
       </Fragment>
-    )
+    );
   }
 }
 
-export default SocialLink
+export default SocialLink;

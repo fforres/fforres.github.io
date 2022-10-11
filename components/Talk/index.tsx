@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from 'react'
-import InlineLink from '../InlineLink'
-import Hr from '../Hr'
+import React, { Component, Fragment } from "react";
+import Hr from "../Hr";
+import InlineLink from "../InlineLink";
 
 class Talk extends Component<any> {
   render() {
@@ -17,27 +17,30 @@ class Talk extends Component<any> {
                 {this.props.talk.organizacion.nombre}
               </InlineLink>
             </h2>
-            <div className="fecha"> {this.props.talk.fecha} </div>
+            <div className="fecha">{this.props.talk.fecha}</div>
           </div>
           <div className="talkTitle">
             <span>{this.props.talk.title}</span>
             <span className="talkLink">
-              {this.props.talk.talk.length ? (
-                <a
-                  className="link"
-                  href={this.props.talk.talk}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  🔗
-                </a>
-              ) : null}
+              {this.props.talk.talk.length
+                ? (
+                  <a
+                    className="link"
+                    href={this.props.talk.talk}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    🔗
+                  </a>
+                )
+                : null}
             </span>
           </div>
-          <div className="descripcion"> {this.props.talk.descripcion} </div>
+          <div className="descripcion">{this.props.talk.descripcion}</div>
         </div>
         <Hr />
-        <style jsx>{`
+        <style jsx>
+          {`
           .talk {
             width: 100%;
             display: flex;
@@ -89,10 +92,11 @@ class Talk extends Component<any> {
             font-size: 0.8rem;
             text-align: right;
           }
-        `}</style>
+        `}
+        </style>
       </Fragment>
-    )
+    );
   }
 }
 
-export default Talk
+export default Talk;

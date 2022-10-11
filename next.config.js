@@ -7,7 +7,7 @@ module.exports = {
   webpack: config => {
     config.module.rules.push({
       test: /\.md$/,
-      use: "raw-loader"
+      use: "raw-loader",
     });
 
     return config;
@@ -18,8 +18,8 @@ module.exports = {
     return {
       "/": { page: "/" },
       "/projects": { page: "/projects" },
-      "/talks": { page: "/talks" }
+      "/talks": { page: "/talks" },
     };
   },
-  target: "serverless"
+  target: "serverless",
 };

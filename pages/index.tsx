@@ -1,8 +1,8 @@
-import React, { Component, Fragment } from 'react'
-import Hero from '../components/Hero'
-import LongResume from '../components/LongResume'
-import SmallResume from '../components/SmallResume'
-import Hr from '../components/Hr'
+import React, { Component, Fragment } from "react";
+import Hero from "../components/Hero";
+import Hr from "../components/Hr";
+import LongResume from "../components/LongResume";
+import SmallResume from "../components/SmallResume";
 
 class Home extends Component {
   render() {
@@ -17,7 +17,8 @@ class Home extends Component {
             <Hr />
           </div>
         </div>
-        <style jsx>{`
+        <style jsx>
+          {`
           .contentWrapper {
             padding-top: 4rem;
             width: 100%;
@@ -31,10 +32,11 @@ class Home extends Component {
             padding-left: 3rem;
             padding-right: 3rem;
           }
-        `}</style>
+        `}
+        </style>
       </Fragment>
-    )
+    );
   }
 }
 
-export default Home
+export default Home;

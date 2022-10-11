@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import markdown from './small.md'
-import Markdown from '../Markdown'
+import React, { Component } from "react";
+import Markdown from "../Markdown";
+import markdown from "./small.md";
 
 class LongResume extends Component {
   render() {
-    return <Markdown rawMarkdown={markdown} />
+    return <Markdown rawMarkdown={markdown} />;
   }
 }
 
-export default LongResume
+export default LongResume;

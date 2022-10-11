@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 interface ISocialButtons {
-  icons: String
+  icons: String;
 }
 
 class SocialButton extends Component<ISocialButtons, any> {
@@ -9,13 +9,15 @@ class SocialButton extends Component<ISocialButtons, any> {
     return (
       <a>
         socialButton
-        <style jsx>{`
+        <style jsx>
+          {`
           a {
           }
-        `}</style>
+        `}
+        </style>
       </a>
-    )
+    );
   }
 }
 
-export default SocialButton
+export default SocialButton;

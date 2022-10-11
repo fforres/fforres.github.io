@@ -1,8 +1,8 @@
-import React from 'react'
-import Sidebar from '../components/Sidebar'
-import TopBar from '../components/TopBar'
-import Footer from '../components/Footer'
-import { tabletMax } from '../components/style/breakpoints'
+import React from "react";
+import Footer from "../components/Footer";
+import Sidebar from "../components/Sidebar";
+import { tabletMax } from "../components/style/breakpoints";
+import TopBar from "../components/TopBar";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -13,7 +13,8 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
         <Footer />
       </div>
-      <style jsx>{`
+      <style jsx>
+        {`
         .root {
           height: 100%;
           display: flex;
@@ -29,7 +30,8 @@ export default function App({ Component, pageProps }) {
             flex-direction: column;
           }
         }
-      `}</style>
+      `}
+      </style>
     </div>
-  )
+  );
 }

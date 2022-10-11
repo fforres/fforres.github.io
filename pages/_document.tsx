@@ -2,13 +2,13 @@
 // Event handlers like onClick can't be added to this file
 
 // ./pages/_document.js
-import Document, { Head, Main, NextScript } from 'next/document'
-import { textColorLightBackground } from '../components/style/colors'
+import Document, { Head, Main, NextScript } from "next/document";
+import { textColorLightBackground } from "../components/style/colors";
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: any) {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps };
   }
 
   render() {
@@ -65,6 +65,6 @@ export default class MyDocument extends Document {
           <NextScript />
         </body>
       </html>
-    )
+    );
   }
 }
