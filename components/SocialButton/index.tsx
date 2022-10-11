@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 interface ISocialButtons {
-  icons: String;
+  icons: string;
 }
 
 class SocialButton extends Component<ISocialButtons, any> {

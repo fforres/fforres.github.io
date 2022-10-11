@@ -1,16 +1,14 @@
-// _document is only rendered on the server side and not on the client side
-// Event handlers like onClick can't be added to this file
-
-// ./pages/_document.js\
+import type { DocumentProps } from "next/document";
 import { Head, Html, Main, NextScript } from "next/document";
+import React from "react";
 import { textColorLightBackground } from "../components/style/colors";
-export default function Document({ css }) {
+export default function Document({ css }: DocumentProps & { css: any }) {
   return (
     <Html>
       <Head>
         <style dangerouslySetInnerHTML={{ __html: css }} />
         <link
-          href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:300,300i,700"
+          href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:300,300i,700&display=optional"
           rel="stylesheet"
         />
         <style>

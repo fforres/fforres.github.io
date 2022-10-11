@@ -7,12 +7,18 @@ module.exports = {
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:@next/next/recommended",
   ],
   "overrides": [],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
+  },
+  "settings": {
+    "react": {
+      "version": "detect",
+    },
   },
   "plugins": [
     "react",
