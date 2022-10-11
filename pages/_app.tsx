@@ -1,10 +1,11 @@
+import type { AppProps } from "next/app";
 import React from "react";
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
 import { tabletMax } from "../components/style/breakpoints";
 import TopBar from "../components/TopBar";
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className="root">
       <Sidebar />

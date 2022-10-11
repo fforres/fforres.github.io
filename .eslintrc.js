@@ -18,5 +18,16 @@ module.exports = {
     "react",
     "@typescript-eslint",
   ],
-  "rules": {},
+  "rules": {
+    "rules": {
+      "react/no-unknown-property": [
+        2,
+        {
+          "ignore": [
+            "jsx",
+          ],
+        },
+      ],
+    },
+  },
 };
