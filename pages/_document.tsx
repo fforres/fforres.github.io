@@ -1,27 +1,20 @@
 // _document is only rendered on the server side and not on the client side
 // Event handlers like onClick can't be added to this file
 
-// ./pages/_document.js
-import Document, { Head, Main, NextScript } from "next/document";
+// ./pages/_document.js\
+import { Head, Html, Main, NextScript } from "next/document";
 import { textColorLightBackground } from "../components/style/colors";
-
-export default class MyDocument extends Document {
-  static async getInitialProps(ctx: any) {
-    const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps };
-  }
-
-  render() {
-    return (
-      <html>
-        <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link
-            href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:300,300i,700"
-            rel="stylesheet"
-          />
-          <style>
-            {`
+export default function Document({ css }) {
+  return (
+    <Html>
+      <Head>
+        <style dangerouslySetInnerHTML={{ __html: css }} />
+        <link
+          href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:300,300i,700"
+          rel="stylesheet"
+        />
+        <style>
+          {`
               html {
                 box-sizing: border-box;
               }
@@ -58,13 +51,12 @@ export default class MyDocument extends Document {
                 height: 100%;
               } /* custom! */
             `}
-          </style>
-        </Head>
-        <body className="custom_class">
-          <Main />
-          <NextScript />
-        </body>
-      </html>
-    );
-  }
+        </style>
+      </Head>
+      <body className="custom_class">
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  );
 }
