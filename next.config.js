@@ -12,7 +12,8 @@ module.exports = {
 
     return config;
   },
-  exportTrailingSlash: true,
+  trailingSlash: true,
+  swcMinify: true,
   exportPathMap: function() {
     return {
       "/": { page: "/" },
