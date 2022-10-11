@@ -1,24 +1,25 @@
-module.exports = {
-  webpackDevMiddleware(config) {
-    // Perform customizations to webpack dev middleware config
-    // Important: return the modified config
-    return config;
-  },
-  webpack: config => {
+/**
+ * @type {import('next').NextCosnfig}
+ */
+const nextConfig = {
+  webpack: (config) => {
     config.module.rules.push({
       test: /\.md$/,
-      use: "raw-loader"
+      use: "raw-loader",
     });
 
     return config;
   },
-  exportTrailingSlash: true,
+  trailingSlash: true,
+  swcMinify: true,
   exportPathMap: function() {
     return {
       "/": { page: "/" },
       "/projects": { page: "/projects" },
-      "/talks": { page: "/talks" }
+      "/talks": { page: "/talks" },
     };
   },
-  target: "serverless"
 };
+
+// eslint-disable-next-line no-undef
+module.exports = nextConfig;

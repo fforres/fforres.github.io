@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from 'react'
-import talksData from '../components/Talk/data.json'
-import Talk from '../components/Talk'
+import React, { Component, Fragment } from "react";
+import Talk from "../components/Talk";
+import talksData from "../components/Talk/data.json";
 
 class Talks extends Component {
   render() {
@@ -12,12 +12,11 @@ class Talks extends Component {
           </div>
 
           <div className="talkContainer">
-            {talksData.map((el: any, i: number) => (
-              <Talk key={i} talk={el} />
-            ))}
+            {talksData.map((el, i: number) => <Talk key={i} talk={el} />)}
           </div>
         </section>
-        <style jsx>{`
+        <style jsx>
+          {`
           h1 {
             margin-top: 2rem;
             margin-bottom: 3rem;
@@ -40,10 +39,11 @@ class Talks extends Component {
             padding-left: 3rem;
             padding-right: 3rem;
           }
-        `}</style>
+        `}
+        </style>
       </Fragment>
-    )
+    );
   }
 }
 
-export default Talks
+export default Talks;

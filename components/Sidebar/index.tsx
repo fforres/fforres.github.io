@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
-import Link from 'next/link'
+import Link from "next/link";
+import React, { Component } from "react";
 
+import SocialLink from "../SocialLink";
+import { tabletMax } from "../style/breakpoints";
 import {
   backgroundColor,
-  textColorDarkBackground,
   darkerBackgroundColor,
-  lighterTextColorDarkBackground
-} from '../style/colors'
-import SocialLink from '../SocialLink'
-import { tabletMax } from '../style/breakpoints'
+  lighterTextColorDarkBackground,
+  textColorDarkBackground,
+} from "../style/colors";
 
 class Sidebar extends Component<any, any> {
   render() {
@@ -36,7 +36,8 @@ class Sidebar extends Component<any, any> {
             iconName="Linkedin"
           />
         </div>
-        <style jsx>{`
+        <style jsx>
+          {`
           nav {
             height: 100%;
             width: 9rem;
@@ -72,10 +73,11 @@ class Sidebar extends Component<any, any> {
               display: none;
             }
           }
-        `}</style>
+        `}
+        </style>
       </nav>
-    )
+    );
   }
 }
 
-export default Sidebar
+export default Sidebar;

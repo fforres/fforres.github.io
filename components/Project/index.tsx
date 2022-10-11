@@ -1,19 +1,19 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment } from "react";
 
 class Project extends Component<any> {
   state = {
-    shown: false
-  }
+    shown: false,
+  };
 
   showMoreInfo = () => {
     this.setState({
-      shown: !this.state.shown
-    })
-  }
+      shown: !this.state.shown,
+    });
+  };
 
   render() {
-    const { project } = this.props
-    const { img, link, title } = project
+    const { project } = this.props;
+    const { img, link, title } = project;
     return (
       <Fragment>
         <a
@@ -27,7 +27,8 @@ class Project extends Component<any> {
             <span className="coverText">{title}</span>
           </div>
         </a>
-        <style jsx>{`
+        <style jsx>
+          {`
           .project {
             max-width: 20rem;
             margin: 0.5rem;
@@ -82,10 +83,11 @@ class Project extends Component<any> {
             background-size: cover;
             background-position: 50%;
           }
-        `}</style>
+        `}
+        </style>
       </Fragment>
-    )
+    );
   }
 }
 
-export default Project
+export default Project;

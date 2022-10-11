@@ -1,9 +1,7 @@
 [
   {
-    "title":
-      "“There is no spoon” – Building VR experiences in the Browser (With JS)",
-    "descripcion":
-      "WebVR is the developing open standard that makes it possible to create and experience VR using just a browser! All that’s required is a cell phone (or headset), a browser, and JavaScript.",
+    "title": "“There is no spoon” – Building VR experiences in the Browser (With JS)",
+    "descripcion": "WebVR is the developing open standard that makes it possible to create and experience VR using just a browser! All that’s required is a cell phone (or headset), a browser, and JavaScript.",
     "fecha": "14 Nov 2017",
     "organizacion": {
       "nombre": "JSKongress 2017",
@@ -12,10 +10,8 @@
     "talk": "https://www.youtube.com/watch?v=QBPWO_h2zck"
   },
   {
-    "title":
-      "“There is no spoon” – Building VR experiences in the Browser (With JS)",
-    "descripcion":
-      "WebVR es el standar abierto que permite crear experiencias de realidad virtual con solo un navegador! Todo lo que se necesita es un celular, (o un headset), un navegador, y JavaScript!",
+    "title": "“There is no spoon” – Building VR experiences in the Browser (With JS)",
+    "descripcion": "WebVR es el standar abierto que permite crear experiencias de realidad virtual con solo un navegador! Todo lo que se necesita es un celular, (o un headset), un navegador, y JavaScript!",
     "fecha": "26 Oct 2017",
     "organizacion": {
       "nombre": "NodeConf Argentina 2017",
@@ -24,15 +20,12 @@
     "talk": "https://github.com/fforres/JSKongress"
   },
   {
-    "title":
-      "Realidad Virtual en la web con ... React? (Si, y con A-Frame y Redux)",
-    "descripcion":
-      "Una pequeña introducción a VR en la Web, usando React, A-Frame y Redux",
+    "title": "Realidad Virtual en la web con ... React? (Si, y con A-Frame y Redux)",
+    "descripcion": "Una pequeña introducción a VR en la Web, usando React, A-Frame y Redux",
     "fecha": "9 Mar 2017",
     "organizacion": {
       "nombre": "SantiagoJS Meetup",
-      "link":
-        "https://www.youtube.com/watch?v=3U4WrDcXEFQ&feature=youtu.be&t=3423"
+      "link": "https://www.youtube.com/watch?v=3U4WrDcXEFQ&feature=youtu.be&t=3423"
     },
     "talk": "http://slides.com/forres/deck-1-1"
   },
@@ -74,20 +67,17 @@
       "nombre": "Seminario de Ingeniería SEIS - Universidad del BioBio",
       "link": "http://www.ubiobio.cl"
     },
-    "talk":
-      "https://github.com/fforres/presentaciones-y-charlas/tree/gh-pages/Congreso_chillan"
+    "talk": "https://github.com/fforres/presentaciones-y-charlas/tree/gh-pages/Congreso_chillan"
   },
   {
     "title": "Una hi-JS-storia de amor y odio",
-    "descripcion":
-      "Una historia amor y odio con Javascript, de jQuery a Noders",
+    "descripcion": "Una historia amor y odio con Javascript, de jQuery a Noders",
     "fecha": "24 Oct 2015",
     "organizacion": {
       "nombre": "IV Devs - IVChallenge 2015",
       "link": "https://www.facebook.com/groups/programadores.iv.region.chile"
     },
-    "talk":
-      "https://github.com/fforres/presentaciones-y-charlas/tree/gh-pages/ProgramadoresIV"
+    "talk": "https://github.com/fforres/presentaciones-y-charlas/tree/gh-pages/ProgramadoresIV"
   },
   {
     "title": "Jornadas Informáticas - Ovalle",
@@ -97,20 +87,16 @@
       "nombre": "Universidad Santo Tomás",
       "link": "https://www.santotomas.cl/ust"
     },
-    "talk":
-      "https://github.com/fforres/presentaciones-y-charlas/tree/gh-pages/Ovalle"
+    "talk": "https://github.com/fforres/presentaciones-y-charlas/tree/gh-pages/Ovalle"
   },
   {
     "title": "Comunidades de Software como motor de desarrollo",
-    "descripcion":
-      "Una mirada a las Comunidades de Software -> ¿Comunidades === Partido de Futbol?",
+    "descripcion": "Una mirada a las Comunidades de Software -> ¿Comunidades === Partido de Futbol?",
     "fecha": "30 Jun 2015",
     "organizacion": {
       "nombre": "DevCon Chile 2015",
-      "link":
-        "https://www.fayerwayer.com/2015/09/devcon-chile-el-mayor-evento-para-desarrolladores-y-programadores/"
+      "link": "https://www.fayerwayer.com/2015/09/devcon-chile-el-mayor-evento-para-desarrolladores-y-programadores/"
     },
-    "talk":
-      "https://github.com/fforres/presentaciones-y-charlas/tree/gh-pages/DevCon"
+    "talk": "https://github.com/fforres/presentaciones-y-charlas/tree/gh-pages/DevCon"
   }
 ]

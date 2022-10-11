@@ -1,11 +1,7 @@
-import React, { Component } from 'react'
-import { tabletMin } from '../style/breakpoints'
-import Link from 'next/link'
-import {
-  backgroundColor,
-  textColorDarkBackground,
-  lighterTextColorDarkBackground
-} from '../style/colors'
+import Link from "next/link";
+import React, { Component } from "react";
+import { tabletMin } from "../style/breakpoints";
+import { backgroundColor, lighterTextColorDarkBackground, textColorDarkBackground } from "../style/colors";
 
 class Home extends Component {
   render() {
@@ -20,7 +16,8 @@ class Home extends Component {
         <Link href="/projects">
           <a>Projects</a>
         </Link>
-        <style jsx>{`
+        <style jsx>
+          {`
           nav.topBar {
             height: 3rem;
             width: 100%;
@@ -50,10 +47,11 @@ class Home extends Component {
               display: none;
             }
           }
-        `}</style>
+        `}
+        </style>
       </nav>
-    )
+    );
   }
 }
 
-export default Home
+export default Home;

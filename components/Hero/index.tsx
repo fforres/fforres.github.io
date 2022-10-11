@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from 'react'
-import { lighterTextColorDarkBackground, blackColor } from '../style/colors'
-import { tabletMax } from '../style/breakpoints'
+import React, { Component, Fragment } from "react";
+import { tabletMax } from "../style/breakpoints";
+import { blackColor, lighterTextColorDarkBackground } from "../style/colors";
 
 class Hero extends Component {
   render() {
@@ -10,7 +10,8 @@ class Hero extends Component {
           <div className="backgroundImage" />
           <div className="text">I do JavaScript stuff</div>
         </section>
-        <style jsx>{`
+        <style jsx>
+          {`
           section {
             height: 90vh;
             position: relative;
@@ -46,10 +47,11 @@ class Hero extends Component {
               text-align: right;
             }
           }
-        `}</style>
+        `}
+        </style>
       </Fragment>
-    )
+    );
   }
 }
 
-export default Hero
+export default Hero;
