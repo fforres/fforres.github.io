@@ -9,4 +9,4 @@ I got your back
 5. I love [coding](https://www.github.com/fforres).
 6. I really love JS, TS & NodeJS.
 7. I also love teaching.
-8. I do: [Noders](https://www.noders.com/), [JSMeetups](https://www.meetup.com/es/Javascript-Chile/), [Noders.FM](https://noders.fm/) and [NodeSchool](https://nodeschool.io/).
+8. I do: [JSConf Chile](https://jsconf.cl), [Noders](https://www.noders.com/), [JSMeetups](https://www.meetup.com/es/Javascript-Chile/), [Noders.FM](https://noders.fm/) and [NodeSchool](https://nodeschool.io/).
