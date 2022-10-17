@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from "react";
 import Hero from "../components/Hero";
-import Hr from "../components/Hr";
-import LongResume from "../components/LongResume";
-import SmallResume from "../components/SmallResume";
+const Hr = React.lazy(() => import("../components/Hr"));
+const LongResume = React.lazy(() => import("../components/LongResume"));
+const SmallResume = React.lazy(() => import("../components/SmallResume"));
 
 class Home extends Component {
   render() {
@@ -11,10 +11,11 @@ class Home extends Component {
         <Hero />
         <div className="contentWrapper">
           <div className="container">
-            <LongResume />
-            <Hr />
-            <SmallResume />
-            <Hr />
+            <React.Suspense>
+              <Hr />
+              <LongResume />
+              <SmallResume />
+            </React.Suspense>
           </div>
         </div>
         <style jsx>
