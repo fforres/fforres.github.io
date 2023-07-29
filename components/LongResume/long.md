@@ -4,9 +4,9 @@
 
 I'm a [software engineer](https://github.com/fforres) by choice, an educator at heart ❤️. I'm very passionate about software communities. A [Chilean](https://www.nomadasaurus.com/photos-of-chile/) living in San Francisco, CA.
 
-More than anything I enjoy solving problems using technology, I'm the kind of person that gets bored without a challenge or a cool proyect. I used to work for [Groupon](https://groupon.com), [AxiomZen](https://axiomzen.co) and [Segment](https://segment.io). Nowadays I work @ [Brex](https://brex.com/) making all sorts of cool and geek things using [JS](https://es.wikipedia.org/wiki/JavaScript), [TS](https://www.typescriptlang.org/), [React](https://reactjs.org/) (and [Elixir](https://elixir-lang.org/)).
+More than anything I enjoy solving problems using technology, I'm the kind of person that gets bored without a challenge or a cool proyect. I used to work for [Groupon](https://groupon.com), [AxiomZen](https://axiomzen.co) and [Segment](https://segment.io). Nowadays I work @ [OpenAI](https://openai.com/) trying to help the world and making all sorts of cool and geek things using [JS](https://es.wikipedia.org/wiki/JavaScript), [TS](https://www.typescriptlang.org/), [React](https://reactjs.org/) (and [Python](https://www.python.org/)).
 
-I like working with interesting people, learning, teaching and more importantly, being able to communicate it, that's why I run the [JSMeetups](https://www.meetup.com/NodersJS/) in Santiago, the [NodeSchool](https://nodeschool.io/santiago/) Santiago events, why I started [Noders](https://www.noders.com/), [Noders.FM](https://anchor.fm/noderscast) and [Noders.live](https://noders.live)
+I like working with interesting people, learning, teaching and more importantly, being able to communicate it, that's why I run the [JSMeetups](https://www.meetup.com/NodersJS/) in Santiago, the [NodeSchool](https://nodeschool.io/santiago/) Santiago events, why I started [Noders](https://www.noders.com/), [Noders.FM](https://anchor.fm/noderscast), [Noders.live](https://noders.live), [JSConf Chile](https://jsconf.cl), and why we created a non-profit called [JavascriptChile](https://jschile.org/).
 
 (I also enjoy speaking, giving talks and presentations!)
 
