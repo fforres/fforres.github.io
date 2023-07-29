@@ -1,5 +1,21 @@
 [
   {
+    "title": "Corporacion Javascript Chile",
+    "descripcionCorta": "A Developer Community focused NonProfit",
+    "descripcion": "JavaScript Chile is a non-profit, helping create and develop initiatives that improve the Developer community and ecosystem in Chile. Its the team behing JSConf, 418.",
+    "link": "http://jsconf.cl",
+    "img": "jschile",
+    "collaborators": [{}]
+  },
+  {
+    "title": "Status 418",
+    "descripcionCorta": "A livestream/podcast on Developer Community and Technology",
+    "descripcion": "Status 418 is a space where technology and community meet to explore, learn and grow together. We come together here to unravel the mysteries of the digital world, share our experiences, and most importantly, learn from each other.",
+    "link": "http://418.jschile.org",
+    "img": "teapot",
+    "collaborators": [{}]
+  },
+  {
     "title": "JSConf Chile",
     "descripcionCorta": "The first JSConf in Chile!",
     "descripcion": "JSConf Chile is a community-driven conference, made for developers by developers, with a very clear objective. Fostering the JavaScript engineering community in Chile, beyond its geographical limits.",
