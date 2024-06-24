@@ -8,7 +8,7 @@ class Hero extends Component {
       <Fragment>
         <section>
           <div className="backgroundImage" />
-          <div className="text">I do JavaScript stuff</div>
+          <div className="text">Hi! <br/> I'm fforres</div>
         </section>
         <style jsx>
           {`
